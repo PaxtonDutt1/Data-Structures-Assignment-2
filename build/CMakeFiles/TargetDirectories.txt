@@ -1,0 +1,3 @@
+/workspaces/Data-Structures-Assignment-2/build/CMakeFiles/a2.dir
+/workspaces/Data-Structures-Assignment-2/build/CMakeFiles/edit_cache.dir
+/workspaces/Data-Structures-Assignment-2/build/CMakeFiles/rebuild_cache.dir
