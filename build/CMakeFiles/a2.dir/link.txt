@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/a2.dir/src/main.cpp.o CMakeFiles/a2.dir/src/Student.cpp.o CMakeFiles/a2.dir/src/Course.cpp.o CMakeFiles/a2.dir/src/DataRepository.cpp.o CMakeFiles/a2.dir/src/RegistrationManager.cpp.o -o a2 
