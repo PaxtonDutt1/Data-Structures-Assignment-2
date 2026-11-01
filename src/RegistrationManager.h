@@ -1,0 +1,49 @@
+#pragma once
+#include "ArrayQueue.h"
+#include "ArrayStack.h"
+#include "DataRepository.h"
+#include "LinkedList.h"
+#include "RegistrationRecord.h"
+#include <string>
+
+class RegistrationManager {
+private:
+    DataRepository& repository;
+
+    // Active registrations are stored in a linked structure.
+    LinkedList<RegistrationRecord> registrations;
+
+    // One queue per course is required.
+    // TODO: decide how to associate course codes with waitlist queues
+    // using your hash-table implementation.
+    HashTable<std::string, ArrayQueue<WaitlistEntry>> waitlists;
+
+    // Stack used for undoing the most recent successful registration/drop.
+    ArrayStack<RegistrationAction> undoStack;
+
+public:
+    explicit RegistrationManager(DataRepository& repository);
+
+    void initializeFromRepository();
+
+    bool registerStudent(int studentId, const std::string& courseCode);
+    bool dropStudent(int studentId, const std::string& courseCode);
+    bool undoLastAction();
+
+    void processWaitlist(const std::string& courseCode);
+
+    bool isRegistered(int studentId, const std::string& courseCode) const;
+    int enrollmentCount(const std::string& courseCode) const;
+
+    void printStudentSchedule(int studentId) const;
+    void printCourseRoster(const std::string& courseCode) const;
+    void printWaitlist(const std::string& courseCode) const;
+
+    void saveRegistrations(const std::string& filename) const;
+
+private:
+    bool prerequisitesSatisfied(const Student& student, const Course& course) const;
+    bool canRegister(const Student& student, const Course& course, std::string& reason) const;
+
+    // Internal helpers may be added.
+};

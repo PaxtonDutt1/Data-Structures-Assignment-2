@@ -1,0 +1,1501 @@
+student_id,student_name,level,major,earned_credits,active
+200001,Leila Farah,UG,Engineering,81,Y
+200002,Chloe Anderson,UG,Mathematics,108,Y
+200003,Michael Young,GR,Information Systems,15,Y
+200004,Ryan Williams,GR,Computer Science,26,Y
+200005,David Khalil,GR,Cybersecurity,18,Y
+200006,Ali Clark,GR,Data Science,22,Y
+200007,Karim Martinez,UG,Mathematics,98,Y
+200008,Ryan Brooks,UG,Engineering,56,Y
+200009,Sara Scott,UG,Computer Science,8,Y
+200010,Emma Khalil,GR,Information Systems,11,Y
+200011,Jason Carter,GR,Information Systems,17,Y
+200012,Sofia Thomas,UG,Information Systems,121,Y
+200013,Mina Scott,UG,Information Systems,25,Y
+200014,Mina Johnson,GR,Data Science,35,Y
+200015,Ethan Taylor,UG,Computer Science,32,Y
+200016,Aya Hall,UG,Computer Science,5,Y
+200017,Amira Taylor,UG,Engineering,60,Y
+200018,Aya Anderson,GR,Engineering,21,Y
+200019,Mariam Clark,GR,Computer Science,15,Y
+200020,Karim Lewis,GR,Computer Science,2,Y
+200021,Adam Lewis,UG,Engineering,38,Y
+200022,Lina King,UG,Mathematics,47,Y
+200023,Sofia Green,UG,Data Science,32,Y
+200024,Ethan El Amrani,UG,Information Systems,109,Y
+200025,Tariq Brown,GR,Data Science,5,Y
+200026,Nora Khalil,GR,Mathematics,42,Y
+200027,Maya Scott,UG,Computer Science,33,Y
+200028,Ali Taylor,UG,Engineering,33,N
+200029,Chloe Brown,UG,Computer Science,128,Y
+200030,Tariq Green,GR,Cybersecurity,26,Y
+200031,Lucas Walker,UG,Data Science,87,Y
+200032,Alex Wilson,UG,Mathematics,106,Y
+200033,Zach Farah,UG,Engineering,109,Y
+200034,Hana Brooks,GR,Mathematics,25,Y
+200035,Hana Saidi,UG,Data Science,11,Y
+200036,Nadia Saidi,UG,Computer Science,95,Y
+200037,Lina Walker,UG,Information Systems,42,Y
+200038,Rania Thomas,UG,Data Science,39,Y
+200039,Nabil Farah,UG,Engineering,0,Y
+200040,Nora Green,UG,Computer Science,86,Y
+200041,Maya Lewis,GR,Information Systems,8,Y
+200042,Noah Wilson,UG,Computer Science,5,Y
+200043,Emma El Amrani,UG,Computer Science,125,Y
+200044,Karim King,UG,Data Science,46,Y
+200045,Nabil Anderson,GR,Mathematics,7,Y
+200046,Michael Martinez,UG,Information Systems,8,Y
+200047,Sophia Thomas,UG,Computer Science,15,Y
+200048,Sara Anderson,UG,Mathematics,96,Y
+200049,Nora Taylor,UG,Mathematics,126,Y
+200050,Samir Bennani,UG,Cybersecurity,2,Y
+200051,Emma Davis,UG,Mathematics,34,Y
+200052,Youssef Anderson,UG,Data Science,17,Y
+200053,Mina Thomas,UG,Computer Science,40,Y
+200054,Maya Baker,UG,Mathematics,8,Y
+200055,Omar Thomas,UG,Engineering,116,Y
+200056,Sophia Thomas,UG,Information Systems,96,Y
+200057,Zach Martinez,UG,Mathematics,127,Y
+200058,Zach Bennani,UG,Data Science,49,Y
+200059,Nadia El Amrani,UG,Data Science,122,Y
+200060,Jason Young,UG,Computer Science,53,Y
+200061,Daniel Martinez,UG,Data Science,101,Y
+200062,Nora Wright,UG,Information Systems,18,Y
+200063,Mina Bennani,UG,Data Science,126,Y
+200064,Nora Wright,UG,Cybersecurity,42,Y
+200065,Hana Young,UG,Data Science,119,Y
+200066,Layla Brooks,UG,Data Science,17,Y
+200067,Emma Brown,UG,Engineering,72,Y
+200068,Sara Mansouri,UG,Mathematics,49,Y
+200069,Sofia El Amrani,GR,Engineering,45,Y
+200070,Nadia Farah,UG,Mathematics,109,Y
+200071,Sara Brown,UG,Cybersecurity,60,Y
+200072,Daniel Saidi,UG,Engineering,110,Y
+200073,James Wilson,UG,Cybersecurity,130,Y
+200074,Maya Martinez,UG,Data Science,50,Y
+200075,Chloe Anderson,UG,Information Systems,119,Y
+200076,Rita Davis,UG,Data Science,92,Y
+200077,Michael Farah,UG,Mathematics,25,Y
+200078,Ali Hall,UG,Data Science,62,Y
+200079,Salma Brooks,UG,Data Science,59,Y
+200080,Ali Taylor,UG,Computer Science,27,Y
+200081,Rita Saidi,GR,Data Science,36,Y
+200082,Sofia Davis,UG,Information Systems,62,Y
+200083,Ali Lewis,UG,Cybersecurity,25,Y
+200084,Nadia Carter,GR,Cybersecurity,21,Y
+200085,Mariam Hassan,UG,Mathematics,27,Y
+200086,Aya Wilson,UG,Data Science,123,Y
+200087,Karim Bennani,UG,Data Science,81,Y
+200088,Mariam Farah,UG,Cybersecurity,66,Y
+200089,Grace Brown,UG,Data Science,40,Y
+200090,Youssef Brooks,GR,Data Science,1,Y
+200091,Maya Martinez,UG,Information Systems,3,Y
+200092,Tariq Naji,UG,Mathematics,113,Y
+200093,Alex El Amrani,UG,Mathematics,107,Y
+200094,Evan Anderson,UG,Information Systems,3,Y
+200095,Zach Johnson,UG,Mathematics,14,Y
+200096,Karim Carter,UG,Computer Science,29,Y
+200097,Nadia Martinez,UG,Cybersecurity,64,Y
+200098,Chloe Brown,UG,Data Science,107,Y
+200099,Aya Martinez,GR,Mathematics,15,Y
+200100,Evan El Amrani,UG,Computer Science,128,Y
+200101,Mina Thomas,GR,Mathematics,22,Y
+200102,Ryan Bennani,UG,Engineering,122,Y
+200103,Leila Hassan,UG,Engineering,4,Y
+200104,Mina Khalil,UG,Data Science,52,Y
+200105,Alex Carter,UG,Information Systems,53,Y
+200106,Sophia Naji,UG,Computer Science,28,N
+200107,Ethan Taylor,UG,Data Science,95,Y
+200108,Adam Bennani,UG,Computer Science,34,Y
+200109,Lina Johnson,UG,Cybersecurity,114,Y
+200110,Adam Carter,UG,Cybersecurity,28,Y
+200111,Maya Williams,UG,Data Science,52,Y
+200112,Ali King,UG,Mathematics,1,Y
+200113,Ryan Brown,UG,Computer Science,85,Y
+200114,Maya Brooks,UG,Information Systems,19,Y
+200115,Lucas Rahmani,UG,Information Systems,14,Y
+200116,Tariq Bennani,UG,Mathematics,15,Y
+200117,Nora El Amrani,UG,Mathematics,68,Y
+200118,Youssef Naji,UG,Mathematics,66,Y
+200119,Alex Taylor,UG,Computer Science,89,Y
+200120,Lina Baker,UG,Data Science,119,Y
+200121,Samir King,UG,Engineering,120,Y
+200122,Alex Wright,GR,Data Science,9,Y
+200123,Nora Baker,UG,Computer Science,28,Y
+200124,Tariq Hassan,UG,Mathematics,60,Y
+200125,Michael Johnson,UG,Information Systems,121,Y
+200126,Salma Lewis,UG,Information Systems,97,Y
+200127,Nabil King,UG,Cybersecurity,110,Y
+200128,Grace Saidi,UG,Information Systems,8,Y
+200129,Grace Johnson,UG,Data Science,116,Y
+200130,Chloe Scott,UG,Data Science,85,Y
+200131,Mariam Walker,UG,Cybersecurity,63,Y
+200132,Noah Farah,GR,Mathematics,39,Y
+200133,Maya Khalil,UG,Information Systems,24,Y
+200134,Noah Wilson,UG,Computer Science,1,Y
+200135,Noah Mansouri,UG,Engineering,97,Y
+200136,James Khalil,UG,Engineering,72,Y
+200137,Daniel Thomas,UG,Information Systems,88,Y
+200138,Sophia Wright,UG,Data Science,69,Y
+200139,Mariam Martinez,GR,Cybersecurity,40,Y
+200140,Sara Johnson,UG,Data Science,61,Y
+200141,Grace Thomas,UG,Information Systems,129,Y
+200142,Omar Scott,UG,Cybersecurity,91,Y
+200143,David Brooks,UG,Cybersecurity,32,Y
+200144,Zach Scott,UG,Engineering,20,Y
+200145,Noah Hassan,GR,Cybersecurity,42,Y
+200146,Nadia Scott,UG,Mathematics,74,Y
+200147,Jason Young,UG,Data Science,75,Y
+200148,Mina Scott,GR,Cybersecurity,7,Y
+200149,Salma Davis,UG,Cybersecurity,41,Y
+200150,Samir El Amrani,UG,Data Science,63,Y
+200151,Lina Carter,UG,Information Systems,40,Y
+200152,Layla Brown,GR,Computer Science,44,Y
+200153,Alex Young,UG,Cybersecurity,56,Y
+200154,Chloe Brown,UG,Computer Science,95,Y
+200155,Tariq Hassan,UG,Computer Science,126,Y
+200156,Emma Walker,UG,Computer Science,55,Y
+200157,Michael Hall,UG,Information Systems,106,Y
+200158,Nabil El Amrani,UG,Information Systems,48,Y
+200159,Maya Green,UG,Computer Science,79,Y
+200160,Ethan Young,UG,Information Systems,115,Y
+200161,Michael Mansouri,UG,Mathematics,116,Y
+200162,Sophia Walker,GR,Engineering,14,Y
+200163,Karim King,GR,Engineering,2,Y
+200164,Nabil Carter,UG,Computer Science,80,Y
+200165,Amira Williams,GR,Mathematics,14,Y
+200166,Sophia Hall,UG,Information Systems,38,Y
+200167,Youssef Thomas,UG,Mathematics,61,Y
+200168,Alex Thomas,UG,Cybersecurity,119,Y
+200169,Leila Williams,GR,Information Systems,36,Y
+200170,Daniel Young,GR,Cybersecurity,3,Y
+200171,David Khalil,UG,Information Systems,25,Y
+200172,David Wright,UG,Mathematics,69,Y
+200173,Youssef Wilson,UG,Cybersecurity,9,Y
+200174,Maya Green,UG,Computer Science,1,Y
+200175,David Hall,UG,Computer Science,122,Y
+200176,Michael Scott,UG,Information Systems,125,Y
+200177,Lucas Brooks,UG,Data Science,34,Y
+200178,Evan Green,GR,Engineering,11,Y
+200179,Tariq Hassan,UG,Data Science,5,Y
+200180,Zach Anderson,UG,Engineering,5,Y
+200181,Mina Young,GR,Information Systems,32,Y
+200182,David Martinez,UG,Data Science,36,Y
+200183,Samir Wilson,UG,Data Science,56,Y
+200184,Michael Clark,UG,Engineering,48,Y
+200185,Ryan Baker,UG,Information Systems,86,Y
+200186,Aya King,UG,Data Science,98,Y
+200187,Michael Hassan,UG,Cybersecurity,117,Y
+200188,Ali Taylor,UG,Data Science,15,Y
+200189,Salma Saidi,UG,Cybersecurity,100,Y
+200190,Adam Davis,UG,Cybersecurity,117,Y
+200191,Mariam King,UG,Mathematics,14,Y
+200192,James Hassan,UG,Information Systems,41,Y
+200193,Omar Clark,UG,Information Systems,84,Y
+200194,Aya Green,UG,Engineering,124,Y
+200195,Chloe Johnson,UG,Computer Science,97,Y
+200196,Samir Mansouri,UG,Mathematics,99,Y
+200197,Nora El Amrani,UG,Mathematics,84,Y
+200198,Lucas Green,UG,Cybersecurity,16,Y
+200199,Grace Khalil,UG,Engineering,3,Y
+200200,Michael Martinez,UG,Engineering,105,Y
+200201,Leila Wright,UG,Computer Science,120,Y
+200202,Karim Khalil,UG,Mathematics,97,Y
+200203,Sara Wilson,UG,Cybersecurity,37,Y
+200204,Alex Davis,UG,Mathematics,81,Y
+200205,Rania Johnson,UG,Computer Science,73,Y
+200206,Emma Lewis,UG,Data Science,109,Y
+200207,Omar Clark,UG,Cybersecurity,107,Y
+200208,Lucas Green,GR,Computer Science,7,Y
+200209,Daniel Taylor,GR,Information Systems,8,Y
+200210,Rania Williams,UG,Information Systems,64,Y
+200211,Alex Rahmani,UG,Data Science,80,Y
+200212,Daniel Baker,UG,Mathematics,11,Y
+200213,Sara Brown,UG,Cybersecurity,56,Y
+200214,Tariq Johnson,UG,Computer Science,119,N
+200215,Youssef Anderson,UG,Mathematics,113,N
+200216,Zach Farah,UG,Cybersecurity,98,Y
+200217,Nora Hassan,UG,Data Science,39,Y
+200218,Omar Johnson,UG,Computer Science,8,Y
+200219,Layla Wilson,UG,Information Systems,64,Y
+200220,Daniel Thomas,UG,Computer Science,93,Y
+200221,Chloe Brooks,UG,Mathematics,2,Y
+200222,Hana Hassan,UG,Data Science,50,Y
+200223,Omar Saidi,UG,Mathematics,84,Y
+200224,Ryan Farah,UG,Engineering,50,Y
+200225,Tariq El Amrani,UG,Computer Science,120,Y
+200226,Hana Bennani,GR,Computer Science,21,Y
+200227,Nabil El Amrani,GR,Engineering,23,Y
+200228,Omar Hall,GR,Mathematics,44,Y
+200229,Jason Baker,GR,Information Systems,42,Y
+200230,Karim Young,UG,Computer Science,36,Y
+200231,Rania Saidi,UG,Computer Science,25,Y
+200232,Ryan Young,UG,Cybersecurity,80,Y
+200233,Rania Anderson,UG,Mathematics,113,Y
+200234,Youssef Naji,GR,Information Systems,20,Y
+200235,Omar Hassan,UG,Engineering,125,Y
+200236,Nadia Young,UG,Mathematics,72,Y
+200237,Emma Scott,UG,Information Systems,37,Y
+200238,Tariq Hall,UG,Computer Science,39,Y
+200239,Lucas El Amrani,UG,Cybersecurity,107,Y
+200240,Alex Martinez,UG,Mathematics,37,Y
+200241,Rania Walker,UG,Cybersecurity,70,Y
+200242,Rania Williams,GR,Data Science,14,Y
+200243,Lina Farah,UG,Computer Science,72,Y
+200244,James Wright,UG,Engineering,127,Y
+200245,Karim Brown,GR,Information Systems,3,Y
+200246,Rania Naji,UG,Information Systems,83,Y
+200247,Lucas Naji,UG,Mathematics,29,Y
+200248,Lina Baker,UG,Data Science,123,Y
+200249,Samir Baker,GR,Computer Science,1,Y
+200250,Sofia Saidi,UG,Information Systems,104,Y
+200251,Youssef Baker,GR,Mathematics,28,Y
+200252,Daniel Hall,UG,Cybersecurity,27,Y
+200253,Mariam King,GR,Data Science,5,Y
+200254,Mariam Rahmani,UG,Information Systems,36,Y
+200255,Karim King,GR,Mathematics,12,Y
+200256,Leila Hall,GR,Mathematics,37,Y
+200257,Nabil Davis,UG,Data Science,44,Y
+200258,Aya Hall,UG,Information Systems,96,Y
+200259,Youssef El Amrani,UG,Cybersecurity,23,Y
+200260,Grace El Amrani,UG,Computer Science,2,Y
+200261,Karim King,UG,Data Science,130,Y
+200262,Layla Wilson,GR,Engineering,28,Y
+200263,Lina Lewis,UG,Computer Science,37,Y
+200264,Tariq King,UG,Cybersecurity,36,Y
+200265,Ali Brooks,UG,Data Science,94,Y
+200266,Sofia Young,UG,Computer Science,35,Y
+200267,Layla Johnson,UG,Engineering,102,Y
+200268,Sara Green,UG,Cybersecurity,19,Y
+200269,Layla Rahmani,UG,Mathematics,13,Y
+200270,Mariam Hassan,UG,Information Systems,0,Y
+200271,Amira Clark,UG,Data Science,3,Y
+200272,Ryan El Amrani,UG,Engineering,95,Y
+200273,Sara Davis,GR,Information Systems,3,Y
+200274,Maya Saidi,UG,Information Systems,12,Y
+200275,Rania Lewis,UG,Engineering,89,Y
+200276,Ethan Walker,UG,Engineering,126,Y
+200277,Rita Wright,UG,Engineering,18,Y
+200278,Daniel Wright,UG,Data Science,25,Y
+200279,Sophia Scott,UG,Mathematics,63,Y
+200280,Rita Young,UG,Cybersecurity,122,Y
+200281,Lucas Anderson,UG,Engineering,9,Y
+200282,Youssef Hassan,UG,Cybersecurity,110,Y
+200283,Leila Taylor,UG,Mathematics,64,Y
+200284,Lucas Williams,GR,Cybersecurity,33,Y
+200285,Evan Anderson,UG,Mathematics,86,Y
+200286,Ethan Walker,UG,Data Science,130,Y
+200287,Sara Brown,UG,Data Science,128,Y
+200288,Sara Khalil,UG,Data Science,27,Y
+200289,Aya Taylor,UG,Engineering,128,Y
+200290,Hana Lewis,UG,Mathematics,12,Y
+200291,Tariq El Amrani,UG,Cybersecurity,120,Y
+200292,Rita Carter,UG,Data Science,89,Y
+200293,Jason Carter,UG,Computer Science,103,Y
+200294,James Young,UG,Engineering,122,Y
+200295,Zach Khalil,UG,Mathematics,97,Y
+200296,Nora Thomas,UG,Computer Science,90,Y
+200297,Leila Hall,UG,Information Systems,111,Y
+200298,Nora Bennani,UG,Engineering,113,Y
+200299,Hana Rahmani,UG,Data Science,130,Y
+200300,Lucas Bennani,UG,Engineering,92,Y
+200301,Karim Williams,UG,Mathematics,0,Y
+200302,Rita Wilson,UG,Mathematics,48,Y
+200303,Emma Thomas,GR,Engineering,14,Y
+200304,Nabil Hassan,UG,Information Systems,65,Y
+200305,Rita Brooks,UG,Computer Science,48,Y
+200306,Nabil Carter,GR,Mathematics,11,Y
+200307,Hana Baker,UG,Information Systems,112,Y
+200308,Lina Wright,UG,Computer Science,13,Y
+200309,David Saidi,UG,Cybersecurity,5,Y
+200310,Rania Clark,UG,Cybersecurity,77,Y
+200311,Nadia Mansouri,UG,Mathematics,59,Y
+200312,Youssef Williams,UG,Data Science,75,Y
+200313,Aya Baker,UG,Information Systems,4,Y
+200314,Adam Young,UG,Information Systems,91,Y
+200315,Aya Anderson,UG,Information Systems,120,Y
+200316,Omar Saidi,UG,Computer Science,42,Y
+200317,Leila El Amrani,UG,Information Systems,92,Y
+200318,Mina Clark,UG,Mathematics,45,Y
+200319,Youssef Carter,UG,Data Science,44,Y
+200320,Emma Taylor,UG,Cybersecurity,43,Y
+200321,Karim Williams,UG,Cybersecurity,102,Y
+200322,Hana Bennani,UG,Mathematics,45,Y
+200323,Layla Baker,UG,Computer Science,4,Y
+200324,Zach Brown,GR,Information Systems,14,Y
+200325,Sara Anderson,UG,Information Systems,45,Y
+200326,Rita Taylor,UG,Information Systems,129,Y
+200327,Ryan Martinez,UG,Information Systems,22,Y
+200328,Michael El Amrani,UG,Cybersecurity,60,Y
+200329,Omar Young,UG,Computer Science,78,Y
+200330,Lina Green,UG,Cybersecurity,113,Y
+200331,James Saidi,UG,Data Science,128,Y
+200332,Nabil Walker,UG,Data Science,74,Y
+200333,Jason Thomas,UG,Computer Science,72,Y
+200334,Ryan Scott,UG,Mathematics,126,Y
+200335,Sofia Hassan,GR,Computer Science,20,Y
+200336,Adam Williams,UG,Cybersecurity,127,Y
+200337,Karim Green,UG,Computer Science,1,Y
+200338,Lucas Thomas,UG,Engineering,50,Y
+200339,Sophia Carter,UG,Engineering,123,Y
+200340,Hana Johnson,UG,Computer Science,90,Y
+200341,Michael Hassan,UG,Mathematics,26,Y
+200342,Evan Naji,UG,Information Systems,6,Y
+200343,Tariq El Amrani,UG,Computer Science,79,Y
+200344,Aya Farah,UG,Information Systems,78,Y
+200345,Grace El Amrani,UG,Information Systems,51,Y
+200346,Ethan Farah,UG,Engineering,101,Y
+200347,Maya Walker,UG,Mathematics,77,Y
+200348,Lucas Taylor,UG,Cybersecurity,17,Y
+200349,Youssef Saidi,UG,Mathematics,33,Y
+200350,Nabil Anderson,UG,Mathematics,44,Y
+200351,Maya Anderson,UG,Mathematics,18,Y
+200352,Mina Scott,GR,Cybersecurity,21,Y
+200353,Karim Bennani,GR,Information Systems,35,Y
+200354,Ryan Wilson,UG,Cybersecurity,61,Y
+200355,Evan Clark,GR,Data Science,2,Y
+200356,Sofia Hassan,UG,Mathematics,7,Y
+200357,Youssef Wilson,UG,Cybersecurity,36,Y
+200358,Mina Hassan,UG,Cybersecurity,54,Y
+200359,Grace Saidi,UG,Engineering,66,Y
+200360,James Rahmani,UG,Data Science,108,N
+200361,Nora Walker,UG,Information Systems,27,Y
+200362,Ryan Martinez,UG,Mathematics,111,Y
+200363,Noah Wright,UG,Cybersecurity,110,Y
+200364,Sara Saidi,UG,Data Science,32,Y
+200365,Salma Baker,UG,Engineering,61,Y
+200366,Omar Johnson,UG,Cybersecurity,82,Y
+200367,Salma Bennani,UG,Data Science,29,Y
+200368,Chloe Hall,UG,Cybersecurity,33,Y
+200369,Sofia Walker,UG,Data Science,49,Y
+200370,Noah El Amrani,UG,Information Systems,16,Y
+200371,Michael Davis,UG,Engineering,123,Y
+200372,Samir Anderson,UG,Engineering,84,Y
+200373,Sofia Farah,UG,Information Systems,103,Y
+200374,Hana Baker,UG,Computer Science,128,Y
+200375,James Taylor,UG,Computer Science,94,Y
+200376,James Martinez,UG,Computer Science,75,N
+200377,Omar Martinez,UG,Mathematics,21,Y
+200378,Hana Martinez,UG,Data Science,105,Y
+200379,Lucas Hall,UG,Data Science,2,Y
+200380,Ethan Johnson,UG,Cybersecurity,65,Y
+200381,Mina Davis,UG,Cybersecurity,34,Y
+200382,Jason Carter,UG,Data Science,103,Y
+200383,Sofia Rahmani,GR,Engineering,5,Y
+200384,Zach Thomas,UG,Computer Science,71,Y
+200385,Adam Naji,UG,Cybersecurity,57,Y
+200386,David Green,UG,Cybersecurity,62,Y
+200387,Tariq Wright,UG,Cybersecurity,6,Y
+200388,Leila Clark,UG,Cybersecurity,81,Y
+200389,Nadia Khalil,UG,Computer Science,54,Y
+200390,Lucas Mansouri,UG,Computer Science,121,Y
+200391,Michael Brown,UG,Computer Science,26,Y
+200392,Zach Brooks,UG,Computer Science,120,Y
+200393,Evan Naji,GR,Cybersecurity,34,Y
+200394,Alex Davis,UG,Mathematics,88,Y
+200395,Rita Hassan,UG,Engineering,89,Y
+200396,Aya Saidi,UG,Data Science,123,Y
+200397,Ryan Hassan,UG,Data Science,14,Y
+200398,Sofia Rahmani,UG,Engineering,85,Y
+200399,James Brooks,UG,Data Science,96,Y
+200400,Mina Anderson,GR,Engineering,3,Y
+200401,Maya Green,UG,Mathematics,126,Y
+200402,Sara El Amrani,UG,Mathematics,15,Y
+200403,Jason Baker,UG,Information Systems,36,Y
+200404,Youssef Brown,UG,Cybersecurity,4,Y
+200405,Nadia Lewis,UG,Cybersecurity,90,Y
+200406,Nora Lewis,UG,Cybersecurity,104,Y
+200407,Aya Saidi,UG,Cybersecurity,49,Y
+200408,Sara Khalil,GR,Information Systems,18,Y
+200409,Lucas Brown,UG,Engineering,83,Y
+200410,Nabil Khalil,UG,Data Science,108,Y
+200411,Alex Taylor,UG,Engineering,1,Y
+200412,Daniel Hall,UG,Cybersecurity,110,Y
+200413,James El Amrani,UG,Engineering,1,Y
+200414,Mina El Amrani,GR,Engineering,0,Y
+200415,Emma Williams,UG,Cybersecurity,6,Y
+200416,Layla Anderson,UG,Cybersecurity,54,Y
+200417,Layla Farah,UG,Engineering,103,Y
+200418,Noah Rahmani,UG,Mathematics,22,Y
+200419,Michael Mansouri,UG,Mathematics,70,Y
+200420,Ethan Hall,UG,Computer Science,72,Y
+200421,Sofia Clark,UG,Information Systems,102,Y
+200422,Karim Scott,GR,Cybersecurity,24,Y
+200423,Maya Carter,UG,Computer Science,54,Y
+200424,Ethan Carter,UG,Mathematics,84,Y
+200425,Leila Scott,UG,Mathematics,130,Y
+200426,Ryan Anderson,UG,Computer Science,28,Y
+200427,Layla Taylor,UG,Data Science,77,Y
+200428,Samir Naji,UG,Engineering,53,Y
+200429,Lina Wright,UG,Cybersecurity,17,Y
+200430,Noah Williams,GR,Cybersecurity,10,Y
+200431,Adam Wright,UG,Cybersecurity,20,Y
+200432,Amira Brown,UG,Information Systems,6,Y
+200433,Chloe Lewis,UG,Data Science,129,Y
+200434,Omar Lewis,UG,Cybersecurity,26,Y
+200435,Rita Thomas,UG,Engineering,101,Y
+200436,Ali Scott,UG,Mathematics,16,Y
+200437,James Taylor,UG,Information Systems,126,Y
+200438,Lucas Scott,UG,Engineering,46,Y
+200439,Nadia El Amrani,UG,Computer Science,78,Y
+200440,Mina Rahmani,UG,Data Science,6,Y
+200441,Ryan Scott,UG,Information Systems,123,Y
+200442,Rania Green,UG,Cybersecurity,93,Y
+200443,Karim Brooks,UG,Data Science,53,Y
+200444,Leila Clark,UG,Data Science,128,Y
+200445,Nora Naji,UG,Cybersecurity,22,Y
+200446,Tariq Martinez,UG,Mathematics,97,Y
+200447,Ryan Johnson,GR,Cybersecurity,37,Y
+200448,Mariam Rahmani,UG,Engineering,55,Y
+200449,Sofia Walker,UG,Computer Science,16,Y
+200450,Samir Brooks,UG,Mathematics,107,Y
+200451,Jason Naji,GR,Cybersecurity,12,Y
+200452,Omar Carter,GR,Mathematics,30,Y
+200453,Mina King,UG,Mathematics,32,Y
+200454,Rita Wilson,UG,Information Systems,14,Y
+200455,Jason Taylor,UG,Data Science,76,Y
+200456,Aya Martinez,UG,Cybersecurity,33,Y
+200457,Mina Martinez,UG,Computer Science,61,Y
+200458,Nora Rahmani,UG,Information Systems,52,Y
+200459,Evan Brooks,UG,Data Science,120,Y
+200460,Mina Scott,UG,Mathematics,40,Y
+200461,Ali Walker,UG,Data Science,18,Y
+200462,Sara Williams,UG,Mathematics,43,Y
+200463,Ryan Mansouri,GR,Computer Science,23,Y
+200464,Sara Bennani,UG,Cybersecurity,88,Y
+200465,Noah Brooks,UG,Engineering,16,Y
+200466,Youssef Young,UG,Cybersecurity,129,Y
+200467,Omar King,UG,Cybersecurity,30,Y
+200468,Lucas Hall,GR,Engineering,39,Y
+200469,Mina Baker,UG,Engineering,75,Y
+200470,Michael Naji,UG,Information Systems,64,Y
+200471,Nora Green,GR,Engineering,0,Y
+200472,Aya Saidi,UG,Computer Science,62,Y
+200473,Hana Clark,UG,Cybersecurity,27,Y
+200474,Alex Hall,UG,Engineering,36,Y
+200475,Ali Williams,UG,Data Science,97,Y
+200476,Rita King,UG,Mathematics,27,Y
+200477,Rania Carter,UG,Engineering,25,Y
+200478,Tariq Walker,UG,Data Science,33,Y
+200479,Karim Naji,UG,Computer Science,110,Y
+200480,Rita Carter,UG,Computer Science,60,N
+200481,Alex Bennani,UG,Computer Science,118,Y
+200482,Zach Young,UG,Mathematics,5,N
+200483,Amira Naji,UG,Computer Science,73,Y
+200484,Daniel Martinez,UG,Cybersecurity,53,Y
+200485,Maya Thomas,UG,Mathematics,5,Y
+200486,Nora Brooks,UG,Mathematics,53,Y
+200487,Chloe Brooks,GR,Mathematics,16,Y
+200488,Sofia El Amrani,UG,Cybersecurity,62,Y
+200489,Emma El Amrani,UG,Mathematics,71,Y
+200490,Mina Lewis,UG,Data Science,122,Y
+200491,Emma Green,GR,Engineering,34,Y
+200492,Lucas King,UG,Computer Science,76,Y
+200493,Adam Anderson,UG,Cybersecurity,95,Y
+200494,Aya Thomas,GR,Computer Science,2,Y
+200495,Daniel Saidi,UG,Mathematics,68,Y
+200496,Noah Green,UG,Data Science,30,Y
+200497,Youssef Wilson,GR,Mathematics,25,Y
+200498,Michael Saidi,UG,Mathematics,104,Y
+200499,Samir Young,GR,Information Systems,36,Y
+200500,Omar Wilson,UG,Computer Science,128,Y
+200501,Ryan El Amrani,UG,Data Science,106,Y
+200502,David Anderson,UG,Cybersecurity,10,Y
+200503,Grace Carter,UG,Data Science,44,Y
+200504,James Lewis,UG,Data Science,84,Y
+200505,Grace Bennani,UG,Cybersecurity,86,Y
+200506,Leila Farah,UG,Cybersecurity,113,Y
+200507,Noah Lewis,GR,Engineering,34,Y
+200508,Lina Baker,UG,Computer Science,83,Y
+200509,Layla Anderson,UG,Cybersecurity,40,N
+200510,Alex Wright,UG,Information Systems,20,Y
+200511,Rania Williams,UG,Information Systems,77,Y
+200512,Alex Wright,GR,Information Systems,42,Y
+200513,Grace Rahmani,UG,Computer Science,83,Y
+200514,Mariam Hassan,UG,Computer Science,4,Y
+200515,Nadia Davis,UG,Computer Science,61,Y
+200516,Tariq Brown,UG,Engineering,51,Y
+200517,Adam Clark,UG,Information Systems,10,Y
+200518,Samir Bennani,UG,Computer Science,128,Y
+200519,Maya Green,UG,Computer Science,89,Y
+200520,Mariam King,UG,Mathematics,35,Y
+200521,Ali Green,UG,Computer Science,43,Y
+200522,Lucas Johnson,GR,Data Science,13,Y
+200523,Omar Lewis,UG,Data Science,13,Y
+200524,Mariam Clark,UG,Mathematics,91,Y
+200525,Alex Anderson,UG,Engineering,115,Y
+200526,Michael Williams,UG,Engineering,65,N
+200527,Maya Khalil,UG,Data Science,73,Y
+200528,Nora Rahmani,UG,Mathematics,119,Y
+200529,Lucas Khalil,UG,Information Systems,64,Y
+200530,Ryan El Amrani,UG,Information Systems,22,Y
+200531,Michael Wright,UG,Mathematics,89,Y
+200532,Mariam Wilson,GR,Information Systems,21,Y
+200533,Lina Anderson,UG,Engineering,44,Y
+200534,Karim Saidi,UG,Information Systems,72,Y
+200535,Tariq Brown,GR,Mathematics,37,Y
+200536,Grace Naji,GR,Information Systems,32,Y
+200537,Alex Wright,UG,Information Systems,107,Y
+200538,Jason Naji,GR,Computer Science,24,Y
+200539,Daniel Bennani,UG,Information Systems,35,Y
+200540,Evan Brooks,UG,Mathematics,95,Y
+200541,Layla Bennani,UG,Engineering,21,Y
+200542,Daniel Farah,UG,Information Systems,60,Y
+200543,Rita King,UG,Cybersecurity,88,Y
+200544,Nadia Martinez,GR,Engineering,39,Y
+200545,Layla Johnson,UG,Computer Science,13,Y
+200546,Nadia Brooks,UG,Engineering,122,Y
+200547,David Clark,GR,Engineering,1,Y
+200548,Nabil Taylor,GR,Information Systems,44,Y
+200549,Layla Lewis,UG,Information Systems,57,Y
+200550,Rita Taylor,GR,Cybersecurity,40,Y
+200551,Chloe Rahmani,UG,Computer Science,89,Y
+200552,Adam Carter,GR,Cybersecurity,28,Y
+200553,Zach Davis,UG,Computer Science,124,Y
+200554,Mariam Rahmani,UG,Computer Science,38,Y
+200555,Ali Scott,UG,Mathematics,118,Y
+200556,Alex El Amrani,UG,Mathematics,97,Y
+200557,Zach Anderson,UG,Computer Science,10,Y
+200558,Jason Williams,UG,Computer Science,94,Y
+200559,Emma Clark,UG,Data Science,51,Y
+200560,Amira Khalil,UG,Engineering,128,Y
+200561,Rania Williams,UG,Data Science,3,Y
+200562,Sara Williams,UG,Information Systems,7,Y
+200563,Hana Taylor,UG,Mathematics,22,Y
+200564,Nabil Brooks,GR,Information Systems,32,Y
+200565,Emma Johnson,UG,Information Systems,48,Y
+200566,Daniel Johnson,UG,Information Systems,82,Y
+200567,Aya Green,UG,Computer Science,10,N
+200568,Hana Naji,UG,Cybersecurity,24,Y
+200569,Sofia Davis,GR,Information Systems,13,Y
+200570,Layla Anderson,UG,Data Science,32,Y
+200571,Sophia Bennani,UG,Computer Science,13,Y
+200572,Karim Davis,UG,Data Science,0,Y
+200573,Alex Taylor,GR,Engineering,32,Y
+200574,Ali Farah,UG,Engineering,27,Y
+200575,Nadia Brooks,UG,Mathematics,69,Y
+200576,Ethan Baker,UG,Computer Science,42,N
+200577,Tariq Baker,GR,Engineering,5,Y
+200578,James Rahmani,UG,Engineering,4,Y
+200579,Sofia Young,UG,Data Science,31,Y
+200580,Rania Young,UG,Mathematics,44,Y
+200581,Nadia King,UG,Engineering,61,Y
+200582,Samir Clark,UG,Information Systems,90,Y
+200583,Rania Johnson,GR,Cybersecurity,15,Y
+200584,Evan Hall,UG,Cybersecurity,28,Y
+200585,Lina Thomas,UG,Computer Science,109,Y
+200586,Sophia Saidi,UG,Cybersecurity,43,Y
+200587,Nabil Young,UG,Data Science,32,Y
+200588,Nabil El Amrani,UG,Cybersecurity,115,Y
+200589,Zach Young,UG,Mathematics,9,Y
+200590,Grace Naji,UG,Engineering,33,Y
+200591,Amira Hassan,UG,Data Science,69,Y
+200592,Sophia Farah,UG,Information Systems,82,Y
+200593,Nadia Khalil,UG,Computer Science,1,N
+200594,Daniel Hassan,UG,Data Science,76,Y
+200595,Emma Brown,UG,Engineering,47,Y
+200596,Nadia Williams,UG,Information Systems,125,Y
+200597,Emma Martinez,UG,Computer Science,103,Y
+200598,Samir Mansouri,UG,Information Systems,58,Y
+200599,Mina Mansouri,UG,Cybersecurity,7,Y
+200600,Tariq Hassan,UG,Engineering,126,Y
+200601,Chloe Anderson,UG,Mathematics,27,Y
+200602,Omar Naji,GR,Cybersecurity,10,Y
+200603,Ali Williams,UG,Engineering,3,Y
+200604,Layla Khalil,UG,Mathematics,60,Y
+200605,Nabil Scott,UG,Information Systems,6,Y
+200606,Michael Bennani,UG,Computer Science,126,Y
+200607,Aya Wilson,GR,Engineering,37,Y
+200608,Adam Carter,UG,Data Science,32,Y
+200609,Noah Davis,UG,Mathematics,10,Y
+200610,Alex Martinez,GR,Engineering,39,Y
+200611,Ali Brooks,GR,Engineering,40,Y
+200612,Lucas El Amrani,UG,Computer Science,21,Y
+200613,Youssef Saidi,UG,Mathematics,30,Y
+200614,Lina Anderson,GR,Information Systems,9,Y
+200615,Salma King,UG,Computer Science,111,Y
+200616,Evan King,GR,Engineering,19,Y
+200617,Daniel Lewis,UG,Information Systems,24,Y
+200618,Maya Khalil,GR,Computer Science,20,Y
+200619,Nadia Lewis,UG,Computer Science,29,Y
+200620,Rania Davis,UG,Engineering,87,Y
+200621,Salma Young,UG,Mathematics,40,Y
+200622,Amira Clark,UG,Data Science,99,Y
+200623,Mariam Johnson,UG,Mathematics,18,Y
+200624,Hana Thomas,UG,Information Systems,71,Y
+200625,Emma Green,UG,Computer Science,21,Y
+200626,Michael Thomas,UG,Computer Science,63,Y
+200627,Hana Saidi,UG,Information Systems,35,Y
+200628,Alex Thomas,UG,Information Systems,54,Y
+200629,Grace Young,GR,Mathematics,7,Y
+200630,Amira Johnson,UG,Mathematics,9,Y
+200631,Alex Martinez,UG,Engineering,114,Y
+200632,Michael Johnson,GR,Computer Science,30,Y
+200633,Mina Hassan,UG,Engineering,18,Y
+200634,Jason Martinez,UG,Computer Science,20,Y
+200635,Mariam Khalil,UG,Engineering,19,Y
+200636,Salma Anderson,UG,Mathematics,35,Y
+200637,Youssef Williams,UG,Engineering,49,Y
+200638,Evan King,UG,Information Systems,119,Y
+200639,Amira Taylor,UG,Mathematics,121,Y
+200640,Sophia Williams,UG,Engineering,26,Y
+200641,Sara Naji,UG,Engineering,107,Y
+200642,David Walker,GR,Information Systems,20,Y
+200643,Layla Saidi,UG,Data Science,35,Y
+200644,David Hall,UG,Cybersecurity,103,Y
+200645,Amira Rahmani,GR,Information Systems,1,Y
+200646,Karim Young,GR,Cybersecurity,37,Y
+200647,Nabil Taylor,UG,Information Systems,29,Y
+200648,Leila El Amrani,UG,Engineering,113,Y
+200649,Rania Carter,GR,Information Systems,4,Y
+200650,Mariam Rahmani,UG,Cybersecurity,8,Y
+200651,Chloe Hall,UG,Engineering,95,Y
+200652,Layla Brown,UG,Data Science,92,Y
+200653,Nabil Young,UG,Data Science,125,Y
+200654,Sofia Mansouri,GR,Mathematics,41,Y
+200655,Sophia Wright,UG,Information Systems,112,Y
+200656,Samir Lewis,UG,Engineering,23,Y
+200657,Jason Johnson,UG,Mathematics,117,Y
+200658,Adam Clark,UG,Mathematics,65,Y
+200659,Ethan Rahmani,UG,Mathematics,10,Y
+200660,Leila Green,UG,Cybersecurity,49,Y
+200661,Evan King,GR,Data Science,25,Y
+200662,Sophia Mansouri,GR,Information Systems,11,Y
+200663,Noah Young,UG,Information Systems,9,Y
+200664,Rania Brown,UG,Information Systems,73,Y
+200665,Hana Khalil,UG,Engineering,12,Y
+200666,Sara El Amrani,UG,Data Science,96,Y
+200667,Daniel Williams,UG,Computer Science,17,Y
+200668,David Johnson,UG,Information Systems,73,Y
+200669,Ethan Walker,UG,Cybersecurity,83,Y
+200670,Sara Williams,UG,Data Science,113,Y
+200671,Adam Naji,UG,Mathematics,99,Y
+200672,Leila El Amrani,UG,Cybersecurity,56,Y
+200673,David Young,UG,Computer Science,65,Y
+200674,Rania Thomas,UG,Computer Science,108,Y
+200675,Lina Scott,UG,Mathematics,128,Y
+200676,Youssef Hassan,UG,Computer Science,21,Y
+200677,Grace Carter,UG,Information Systems,59,Y
+200678,Nadia Green,UG,Information Systems,29,Y
+200679,Daniel Naji,UG,Information Systems,96,Y
+200680,Layla Saidi,UG,Data Science,93,Y
+200681,Zach Brown,UG,Computer Science,30,Y
+200682,Sophia Lewis,UG,Engineering,42,Y
+200683,Nabil Anderson,UG,Information Systems,30,Y
+200684,Nadia Walker,UG,Mathematics,44,Y
+200685,Ryan El Amrani,UG,Mathematics,103,Y
+200686,Leila Davis,UG,Mathematics,17,Y
+200687,Amira Scott,GR,Data Science,9,Y
+200688,Rania Brooks,GR,Information Systems,3,Y
+200689,Noah Thomas,UG,Engineering,56,Y
+200690,Sara Brown,GR,Information Systems,36,Y
+200691,Lucas Bennani,UG,Information Systems,106,Y
+200692,Nadia King,UG,Mathematics,24,Y
+200693,Lucas Brown,UG,Data Science,120,Y
+200694,Omar King,UG,Computer Science,108,Y
+200695,Leila Wilson,UG,Data Science,127,Y
+200696,Daniel Scott,UG,Computer Science,2,Y
+200697,Zach Mansouri,UG,Computer Science,83,Y
+200698,Tariq Johnson,UG,Cybersecurity,2,Y
+200699,Leila Baker,UG,Data Science,106,Y
+200700,Noah Anderson,UG,Engineering,81,Y
+200701,Zach Lewis,UG,Data Science,108,Y
+200702,Mariam Lewis,UG,Computer Science,42,Y
+200703,Aya Saidi,UG,Cybersecurity,88,Y
+200704,Ali Brooks,UG,Cybersecurity,35,Y
+200705,Sara Williams,UG,Data Science,9,Y
+200706,Tariq Williams,UG,Mathematics,34,Y
+200707,Adam Bennani,UG,Data Science,116,Y
+200708,Mariam Wright,UG,Engineering,39,Y
+200709,Ethan Mansouri,UG,Data Science,52,Y
+200710,Lina Anderson,GR,Engineering,43,N
+200711,Mina El Amrani,UG,Data Science,23,Y
+200712,Maya King,UG,Mathematics,27,Y
+200713,Rania Mansouri,UG,Engineering,84,Y
+200714,Ethan Clark,UG,Computer Science,20,Y
+200715,Hana Young,UG,Data Science,71,Y
+200716,Sara El Amrani,UG,Information Systems,71,Y
+200717,Rania Hall,UG,Cybersecurity,127,Y
+200718,Amira Farah,UG,Engineering,11,Y
+200719,Sophia Taylor,UG,Cybersecurity,120,Y
+200720,Ethan Clark,UG,Information Systems,89,Y
+200721,Michael Brooks,GR,Data Science,12,Y
+200722,Adam Brooks,UG,Data Science,14,Y
+200723,Rita Carter,GR,Computer Science,25,Y
+200724,Mariam El Amrani,UG,Cybersecurity,114,Y
+200725,Aya King,UG,Mathematics,55,Y
+200726,James Clark,UG,Data Science,96,Y
+200727,Ethan Bennani,UG,Mathematics,130,Y
+200728,Sophia Bennani,UG,Engineering,42,Y
+200729,Amira Brooks,GR,Mathematics,34,Y
+200730,Mina Davis,UG,Cybersecurity,33,Y
+200731,Leila Farah,UG,Data Science,18,Y
+200732,James Baker,UG,Computer Science,8,Y
+200733,Noah Martinez,UG,Cybersecurity,12,N
+200734,Omar Thomas,UG,Mathematics,7,Y
+200735,Zach Bennani,GR,Cybersecurity,21,Y
+200736,Salma Mansouri,GR,Computer Science,29,Y
+200737,Ethan Lewis,GR,Engineering,45,Y
+200738,Lucas Williams,UG,Data Science,26,Y
+200739,Mariam Lewis,GR,Mathematics,31,Y
+200740,Mariam Scott,UG,Information Systems,58,Y
+200741,Youssef El Amrani,UG,Engineering,98,Y
+200742,Alex Anderson,UG,Data Science,49,Y
+200743,Grace Hassan,UG,Data Science,33,Y
+200744,Rita Hassan,UG,Data Science,100,Y
+200745,Rita Bennani,GR,Data Science,26,Y
+200746,Amira Scott,UG,Information Systems,25,Y
+200747,Noah Martinez,UG,Computer Science,119,Y
+200748,Zach Carter,GR,Computer Science,6,Y
+200749,Daniel Anderson,UG,Engineering,41,Y
+200750,Aya Lewis,UG,Data Science,119,Y
+200751,Mariam Hassan,UG,Cybersecurity,88,Y
+200752,Michael Bennani,GR,Data Science,45,Y
+200753,Grace Williams,UG,Computer Science,6,N
+200754,Ethan Scott,UG,Data Science,120,Y
+200755,Alex Naji,GR,Cybersecurity,19,Y
+200756,Lina Anderson,UG,Information Systems,25,Y
+200757,James Clark,UG,Information Systems,110,Y
+200758,Lina Green,UG,Information Systems,64,Y
+200759,Sofia Davis,UG,Computer Science,99,Y
+200760,Lucas Brown,UG,Computer Science,45,Y
+200761,Nora Davis,GR,Information Systems,31,Y
+200762,Hana Brown,UG,Mathematics,94,Y
+200763,Tariq Walker,UG,Cybersecurity,115,Y
+200764,Aya Saidi,UG,Information Systems,66,Y
+200765,Chloe Walker,UG,Information Systems,56,Y
+200766,David Taylor,UG,Data Science,107,Y
+200767,Rania Hall,UG,Information Systems,104,Y
+200768,Daniel Thomas,UG,Mathematics,105,Y
+200769,Ryan Wright,UG,Mathematics,46,Y
+200770,David Johnson,UG,Computer Science,88,Y
+200771,Nora Clark,GR,Mathematics,11,Y
+200772,Adam Farah,UG,Cybersecurity,104,Y
+200773,Mina Young,UG,Data Science,67,Y
+200774,Hana Carter,GR,Mathematics,44,Y
+200775,Evan Carter,UG,Computer Science,37,Y
+200776,Jason Saidi,UG,Mathematics,111,Y
+200777,Michael Brown,UG,Mathematics,27,Y
+200778,Ali Wilson,UG,Cybersecurity,76,Y
+200779,Chloe Scott,UG,Cybersecurity,51,Y
+200780,Grace Wright,UG,Computer Science,15,Y
+200781,Mina Lewis,UG,Cybersecurity,31,Y
+200782,Mina Johnson,UG,Data Science,66,Y
+200783,Emma Clark,UG,Cybersecurity,58,Y
+200784,Adam Mansouri,UG,Engineering,74,Y
+200785,Tariq Brown,UG,Engineering,52,Y
+200786,James Mansouri,UG,Data Science,71,Y
+200787,Ali Wilson,UG,Information Systems,89,Y
+200788,Lucas El Amrani,UG,Computer Science,32,Y
+200789,Grace Walker,UG,Cybersecurity,4,Y
+200790,Salma Mansouri,UG,Cybersecurity,26,Y
+200791,Tariq Baker,UG,Computer Science,60,Y
+200792,Lucas Lewis,UG,Engineering,88,Y
+200793,Grace Anderson,UG,Computer Science,117,Y
+200794,Zach Baker,UG,Cybersecurity,37,Y
+200795,Michael Khalil,UG,Engineering,26,Y
+200796,Youssef Rahmani,UG,Engineering,29,Y
+200797,Ethan Hassan,UG,Information Systems,28,Y
+200798,Nabil Wright,GR,Computer Science,2,Y
+200799,Amira Brown,UG,Computer Science,24,Y
+200800,Nora Green,UG,Information Systems,40,Y
+200801,James Baker,UG,Computer Science,116,Y
+200802,Michael Williams,UG,Information Systems,130,Y
+200803,Hana Walker,UG,Information Systems,100,Y
+200804,Mariam Clark,GR,Data Science,10,Y
+200805,Nadia Clark,UG,Computer Science,30,Y
+200806,Lina Bennani,UG,Engineering,101,Y
+200807,Alex Davis,UG,Mathematics,127,Y
+200808,David Davis,UG,Mathematics,130,Y
+200809,Amira Brooks,UG,Information Systems,34,Y
+200810,Sophia King,GR,Data Science,40,Y
+200811,Hana Saidi,UG,Engineering,5,Y
+200812,Chloe Brown,GR,Computer Science,27,Y
+200813,Aya Taylor,UG,Cybersecurity,77,Y
+200814,Chloe Wilson,GR,Information Systems,10,Y
+200815,Layla Wilson,UG,Cybersecurity,84,Y
+200816,Emma King,UG,Cybersecurity,50,Y
+200817,Tariq Lewis,UG,Computer Science,23,Y
+200818,Mina Khalil,UG,Mathematics,64,Y
+200819,Emma Thomas,UG,Data Science,113,Y
+200820,Rita Rahmani,GR,Information Systems,36,Y
+200821,Michael Carter,UG,Engineering,102,Y
+200822,Evan Naji,UG,Cybersecurity,58,Y
+200823,Nadia El Amrani,UG,Cybersecurity,124,Y
+200824,Sophia Naji,UG,Computer Science,64,Y
+200825,Grace Brown,UG,Data Science,42,Y
+200826,Sophia Brooks,UG,Data Science,20,Y
+200827,Tariq Hassan,UG,Engineering,7,Y
+200828,Tariq Wilson,UG,Computer Science,94,Y
+200829,Leila King,UG,Mathematics,92,Y
+200830,Ethan Anderson,UG,Engineering,99,Y
+200831,Hana Williams,UG,Cybersecurity,102,Y
+200832,Nora Clark,UG,Data Science,35,Y
+200833,Evan Rahmani,UG,Mathematics,85,Y
+200834,Emma Young,UG,Cybersecurity,16,Y
+200835,Mina Bennani,UG,Data Science,104,Y
+200836,Sophia Wright,UG,Information Systems,130,N
+200837,Sophia Hall,UG,Engineering,112,N
+200838,Nabil Carter,UG,Engineering,92,Y
+200839,Michael Scott,GR,Cybersecurity,11,Y
+200840,David Naji,UG,Data Science,126,Y
+200841,Zach Khalil,UG,Engineering,88,Y
+200842,Noah Green,UG,Data Science,34,Y
+200843,Rania Wright,UG,Engineering,61,Y
+200844,Sara Bennani,UG,Engineering,47,Y
+200845,Sophia Taylor,UG,Information Systems,14,Y
+200846,Sara Taylor,UG,Mathematics,34,Y
+200847,Adam Wilson,UG,Information Systems,40,Y
+200848,Leila Mansouri,GR,Mathematics,40,Y
+200849,David Martinez,GR,Mathematics,10,Y
+200850,Adam Hassan,UG,Data Science,81,Y
+200851,Mina Baker,GR,Cybersecurity,34,Y
+200852,Hana Scott,GR,Data Science,12,Y
+200853,Salma Martinez,UG,Mathematics,50,Y
+200854,Hana Naji,UG,Cybersecurity,127,Y
+200855,Sara Brown,UG,Data Science,6,Y
+200856,Youssef Mansouri,UG,Engineering,23,Y
+200857,Sophia Walker,UG,Computer Science,130,Y
+200858,Alex Carter,UG,Mathematics,13,Y
+200859,Michael Lewis,UG,Cybersecurity,75,Y
+200860,Ryan Carter,GR,Cybersecurity,41,Y
+200861,Youssef Taylor,UG,Mathematics,57,Y
+200862,Sara Naji,UG,Engineering,86,Y
+200863,Salma Wilson,UG,Data Science,109,Y
+200864,Grace Khalil,UG,Data Science,64,Y
+200865,Sophia Lewis,UG,Cybersecurity,66,Y
+200866,Evan Bennani,UG,Computer Science,89,Y
+200867,Sofia King,UG,Information Systems,52,Y
+200868,Sara Mansouri,UG,Engineering,111,Y
+200869,Nora Naji,GR,Mathematics,11,Y
+200870,Salma Baker,UG,Engineering,49,Y
+200871,Samir Hall,UG,Data Science,108,Y
+200872,Zach Bennani,UG,Cybersecurity,86,Y
+200873,Zach Farah,UG,Mathematics,21,Y
+200874,Sofia Brown,UG,Information Systems,0,N
+200875,Rania Anderson,UG,Computer Science,14,Y
+200876,Ryan Baker,UG,Mathematics,118,Y
+200877,Hana Hassan,UG,Computer Science,115,Y
+200878,Nadia Baker,UG,Mathematics,105,Y
+200879,Tariq Green,UG,Engineering,49,Y
+200880,Alex Khalil,UG,Mathematics,10,Y
+200881,Rania Davis,UG,Data Science,51,Y
+200882,Alex Baker,UG,Information Systems,66,Y
+200883,Jason Brown,UG,Cybersecurity,55,Y
+200884,Michael Walker,UG,Computer Science,23,Y
+200885,Lina Hassan,UG,Data Science,35,Y
+200886,Karim Brooks,UG,Information Systems,30,Y
+200887,Nora Davis,UG,Data Science,69,Y
+200888,Layla Wright,UG,Engineering,102,Y
+200889,Omar Brown,UG,Mathematics,22,Y
+200890,Tariq Green,UG,Cybersecurity,88,Y
+200891,Salma Martinez,UG,Engineering,24,Y
+200892,Rita El Amrani,UG,Data Science,30,Y
+200893,Nadia Naji,UG,Data Science,64,Y
+200894,Aya Hassan,UG,Information Systems,33,Y
+200895,Samir Rahmani,UG,Mathematics,0,Y
+200896,Youssef El Amrani,UG,Computer Science,102,Y
+200897,Evan Anderson,UG,Information Systems,81,Y
+200898,Mina Davis,UG,Cybersecurity,42,Y
+200899,Noah Scott,UG,Cybersecurity,118,Y
+200900,Youssef King,GR,Information Systems,44,Y
+200901,David Davis,UG,Cybersecurity,1,Y
+200902,Mina Martinez,UG,Cybersecurity,14,Y
+200903,Samir Lewis,UG,Data Science,30,Y
+200904,Noah Johnson,UG,Data Science,87,Y
+200905,Hana Khalil,UG,Computer Science,101,Y
+200906,Tariq Naji,UG,Information Systems,99,Y
+200907,Rita Wilson,UG,Engineering,43,Y
+200908,Samir Walker,UG,Mathematics,24,Y
+200909,Ryan Anderson,UG,Information Systems,116,Y
+200910,Ali Clark,UG,Computer Science,20,Y
+200911,Chloe Anderson,GR,Data Science,16,Y
+200912,Chloe Hall,UG,Information Systems,105,Y
+200913,Chloe Scott,UG,Cybersecurity,85,Y
+200914,Sophia Walker,GR,Mathematics,6,Y
+200915,Maya Thomas,UG,Information Systems,75,Y
+200916,Noah Davis,UG,Information Systems,125,Y
+200917,James Martinez,UG,Mathematics,73,Y
+200918,Alex Brown,UG,Computer Science,112,Y
+200919,Omar Naji,UG,Engineering,26,Y
+200920,Karim Martinez,UG,Cybersecurity,30,Y
+200921,Mina Walker,UG,Engineering,117,Y
+200922,Michael Thomas,UG,Data Science,46,Y
+200923,Chloe Walker,UG,Computer Science,58,Y
+200924,Nora Green,UG,Computer Science,64,Y
+200925,Ethan Mansouri,UG,Information Systems,15,Y
+200926,Hana Bennani,UG,Cybersecurity,42,Y
+200927,Rania El Amrani,UG,Information Systems,55,Y
+200928,Tariq Wright,UG,Engineering,103,Y
+200929,Salma Lewis,UG,Engineering,34,Y
+200930,Adam Carter,GR,Computer Science,15,Y
+200931,Ethan King,UG,Computer Science,119,Y
+200932,Tariq Williams,UG,Cybersecurity,48,Y
+200933,Ethan Williams,UG,Engineering,67,Y
+200934,Jason Anderson,UG,Cybersecurity,83,Y
+200935,Omar Mansouri,UG,Information Systems,80,Y
+200936,Alex Thomas,UG,Computer Science,20,Y
+200937,Grace Farah,UG,Information Systems,68,Y
+200938,Sofia Thomas,UG,Data Science,129,Y
+200939,Leila Brown,UG,Computer Science,28,Y
+200940,Karim Saidi,UG,Cybersecurity,68,Y
+200941,Adam Farah,UG,Computer Science,128,Y
+200942,David Wright,UG,Data Science,4,Y
+200943,Leila Farah,UG,Mathematics,76,Y
+200944,Tariq Khalil,UG,Mathematics,24,Y
+200945,Noah Baker,UG,Data Science,20,Y
+200946,Grace Williams,UG,Data Science,115,Y
+200947,Grace Young,UG,Mathematics,99,Y
+200948,Daniel Green,GR,Cybersecurity,27,Y
+200949,Layla Bennani,UG,Data Science,118,Y
+200950,Tariq Davis,UG,Information Systems,53,Y
+200951,Sara Saidi,UG,Engineering,66,Y
+200952,Tariq Farah,UG,Cybersecurity,23,Y
+200953,Lina Walker,UG,Data Science,90,Y
+200954,Amira Baker,UG,Cybersecurity,4,Y
+200955,Ryan Taylor,UG,Data Science,71,Y
+200956,Nadia Hall,GR,Computer Science,31,Y
+200957,Michael Scott,UG,Computer Science,89,Y
+200958,Alex King,UG,Cybersecurity,1,Y
+200959,Michael Naji,UG,Data Science,24,Y
+200960,James Brown,UG,Information Systems,32,Y
+200961,Emma Hassan,UG,Mathematics,10,Y
+200962,David Brooks,UG,Cybersecurity,102,Y
+200963,Mariam Clark,UG,Cybersecurity,63,Y
+200964,Sara El Amrani,UG,Engineering,112,Y
+200965,Aya Taylor,UG,Cybersecurity,24,Y
+200966,Nabil Anderson,UG,Computer Science,125,Y
+200967,Nora Bennani,UG,Mathematics,95,Y
+200968,Omar Johnson,UG,Mathematics,114,Y
+200969,Mina Wilson,UG,Information Systems,37,Y
+200970,David Brown,UG,Engineering,70,Y
+200971,Lucas Lewis,UG,Mathematics,104,Y
+200972,Karim Clark,GR,Information Systems,43,Y
+200973,Jason Hassan,UG,Cybersecurity,43,Y
+200974,Nadia Walker,UG,Computer Science,42,Y
+200975,Nadia Khalil,UG,Data Science,34,Y
+200976,Layla Naji,UG,Engineering,119,Y
+200977,Maya Johnson,UG,Engineering,11,Y
+200978,Lina Hassan,UG,Engineering,113,Y
+200979,Sara Martinez,UG,Engineering,120,Y
+200980,Leila Scott,UG,Data Science,114,Y
+200981,Emma Taylor,UG,Computer Science,86,Y
+200982,Ryan Green,UG,Engineering,101,Y
+200983,Michael Walker,UG,Cybersecurity,106,Y
+200984,Ali Mansouri,UG,Mathematics,103,Y
+200985,Ali Naji,UG,Mathematics,32,Y
+200986,Amira Saidi,UG,Computer Science,92,Y
+200987,Grace Johnson,UG,Mathematics,97,Y
+200988,Jason Johnson,GR,Cybersecurity,36,Y
+200989,Sophia Hall,UG,Mathematics,85,Y
+200990,Samir Saidi,UG,Engineering,87,N
+200991,Sophia Taylor,GR,Data Science,40,Y
+200992,Adam Bennani,UG,Mathematics,90,Y
+200993,Adam Khalil,UG,Computer Science,37,Y
+200994,Adam Bennani,UG,Information Systems,122,Y
+200995,Adam Anderson,UG,Engineering,5,Y
+200996,Aya Davis,UG,Information Systems,125,Y
+200997,Youssef Wilson,UG,Mathematics,36,Y
+200998,Emma Khalil,UG,Data Science,43,Y
+200999,Amira Williams,UG,Cybersecurity,87,Y
+201000,Daniel Williams,UG,Engineering,82,Y
+201001,Youssef Rahmani,UG,Data Science,120,Y
+201002,Sara Anderson,UG,Mathematics,15,Y
+201003,Youssef Carter,UG,Information Systems,59,Y
+201004,Evan Rahmani,UG,Computer Science,28,Y
+201005,Zach Green,UG,Mathematics,20,Y
+201006,Daniel Lewis,UG,Mathematics,67,Y
+201007,Nadia Thomas,UG,Computer Science,106,Y
+201008,Alex El Amrani,UG,Data Science,66,Y
+201009,Hana El Amrani,UG,Cybersecurity,26,Y
+201010,Emma Taylor,UG,Data Science,36,Y
+201011,Leila Scott,UG,Data Science,35,Y
+201012,Mariam Thomas,UG,Cybersecurity,94,Y
+201013,Nabil El Amrani,UG,Information Systems,121,Y
+201014,Ethan Khalil,UG,Computer Science,90,Y
+201015,Youssef Williams,UG,Computer Science,45,N
+201016,Rita Martinez,UG,Cybersecurity,78,Y
+201017,Salma Hassan,UG,Cybersecurity,63,Y
+201018,Youssef El Amrani,UG,Data Science,107,Y
+201019,Leila Scott,GR,Cybersecurity,26,Y
+201020,Youssef Green,UG,Computer Science,28,Y
+201021,Rita Walker,UG,Engineering,95,Y
+201022,Jason Green,UG,Cybersecurity,42,Y
+201023,Ali Martinez,UG,Mathematics,15,Y
+201024,Chloe Young,GR,Engineering,37,Y
+201025,Maya Carter,UG,Mathematics,69,Y
+201026,Mina Brooks,UG,Data Science,109,Y
+201027,Mina Green,UG,Information Systems,86,Y
+201028,Layla Hall,UG,Data Science,78,Y
+201029,Evan Young,UG,Cybersecurity,6,Y
+201030,Youssef Hassan,UG,Data Science,59,Y
+201031,Nabil Wright,UG,Engineering,30,Y
+201032,Mariam Young,UG,Data Science,0,Y
+201033,Rania Baker,UG,Mathematics,24,Y
+201034,Jason Brown,UG,Cybersecurity,96,Y
+201035,Mariam Carter,UG,Mathematics,61,Y
+201036,Rita Brown,UG,Information Systems,75,Y
+201037,Emma Bennani,GR,Information Systems,11,Y
+201038,Michael Walker,GR,Data Science,29,Y
+201039,Chloe Walker,GR,Computer Science,13,Y
+201040,Alex King,UG,Cybersecurity,93,Y
+201041,David Thomas,UG,Engineering,43,Y
+201042,Aya Farah,UG,Cybersecurity,116,Y
+201043,Tariq Scott,GR,Cybersecurity,5,Y
+201044,Alex Wright,UG,Cybersecurity,115,Y
+201045,Leila Martinez,UG,Information Systems,83,Y
+201046,David Mansouri,UG,Cybersecurity,116,Y
+201047,Rita Davis,UG,Engineering,62,Y
+201048,Zach Brown,UG,Computer Science,11,Y
+201049,Ethan Bennani,UG,Information Systems,80,Y
+201050,Karim Carter,UG,Data Science,49,Y
+201051,Rania Martinez,UG,Computer Science,104,Y
+201052,Ali Naji,UG,Data Science,108,Y
+201053,Michael King,UG,Cybersecurity,106,Y
+201054,Michael Wilson,GR,Computer Science,5,Y
+201055,Mariam Johnson,UG,Information Systems,88,Y
+201056,Nora Scott,UG,Mathematics,27,Y
+201057,Ali Saidi,UG,Computer Science,85,Y
+201058,Jason Saidi,UG,Computer Science,39,Y
+201059,Amira King,UG,Information Systems,102,Y
+201060,Noah Young,UG,Information Systems,64,Y
+201061,Nora Green,UG,Information Systems,36,Y
+201062,Aya Taylor,UG,Computer Science,56,Y
+201063,Karim Johnson,UG,Data Science,11,N
+201064,Alex El Amrani,UG,Information Systems,15,Y
+201065,Adam Khalil,UG,Mathematics,9,Y
+201066,Zach Scott,UG,Mathematics,118,Y
+201067,Emma Anderson,UG,Computer Science,43,N
+201068,Mariam Anderson,UG,Cybersecurity,36,Y
+201069,Omar Mansouri,UG,Computer Science,4,Y
+201070,Michael El Amrani,UG,Cybersecurity,76,Y
+201071,Zach Brown,UG,Information Systems,4,N
+201072,Amira Naji,UG,Mathematics,27,Y
+201073,Mariam King,UG,Data Science,25,Y
+201074,Layla Brown,UG,Cybersecurity,9,Y
+201075,Amira Brooks,UG,Cybersecurity,60,Y
+201076,Aya Mansouri,UG,Data Science,6,Y
+201077,Karim El Amrani,UG,Data Science,121,Y
+201078,Tariq El Amrani,UG,Data Science,40,Y
+201079,Adam El Amrani,UG,Data Science,54,Y
+201080,Hana Brooks,UG,Engineering,91,Y
+201081,Karim Wright,UG,Cybersecurity,112,Y
+201082,Tariq El Amrani,UG,Information Systems,84,Y
+201083,Sofia Thomas,UG,Mathematics,15,Y
+201084,James Bennani,UG,Computer Science,108,Y
+201085,Layla Hassan,UG,Cybersecurity,20,Y
+201086,Layla Johnson,UG,Data Science,126,Y
+201087,Evan Brown,GR,Data Science,27,N
+201088,Ali Taylor,UG,Information Systems,34,Y
+201089,Sara Hassan,UG,Information Systems,61,Y
+201090,Amira Williams,UG,Computer Science,103,Y
+201091,Omar Taylor,UG,Data Science,78,Y
+201092,Jason Martinez,UG,Mathematics,41,Y
+201093,Sofia Brooks,UG,Computer Science,74,Y
+201094,Nora Hall,GR,Computer Science,34,Y
+201095,Sofia Khalil,UG,Engineering,81,Y
+201096,Noah Wright,UG,Mathematics,61,Y
+201097,Maya Scott,UG,Information Systems,37,N
+201098,Noah El Amrani,GR,Computer Science,37,Y
+201099,Ethan Taylor,GR,Mathematics,8,Y
+201100,James Baker,UG,Computer Science,8,Y
+201101,Rania Davis,UG,Mathematics,87,Y
+201102,Layla Young,UG,Computer Science,23,Y
+201103,Karim Johnson,UG,Data Science,44,Y
+201104,Youssef Farah,GR,Mathematics,39,Y
+201105,Alex Wilson,UG,Engineering,116,Y
+201106,Rita Brown,UG,Information Systems,33,Y
+201107,Omar Lewis,UG,Engineering,65,Y
+201108,Daniel Clark,UG,Engineering,99,Y
+201109,Zach Farah,UG,Mathematics,14,Y
+201110,Youssef Taylor,UG,Data Science,78,Y
+201111,Maya Hassan,UG,Computer Science,85,Y
+201112,Salma Thomas,UG,Information Systems,79,Y
+201113,Alex Young,UG,Cybersecurity,2,Y
+201114,Emma Walker,UG,Mathematics,44,Y
+201115,Omar King,UG,Mathematics,11,Y
+201116,Youssef Anderson,UG,Information Systems,20,Y
+201117,Daniel Lewis,GR,Computer Science,29,Y
+201118,Lucas Hall,GR,Cybersecurity,36,Y
+201119,Emma Carter,GR,Information Systems,8,Y
+201120,Rita Rahmani,UG,Data Science,49,Y
+201121,Youssef Brown,UG,Data Science,42,Y
+201122,Lina King,GR,Computer Science,12,Y
+201123,David Carter,UG,Data Science,37,Y
+201124,Sophia Baker,UG,Cybersecurity,33,Y
+201125,Jason Brooks,UG,Engineering,93,Y
+201126,Sara Clark,UG,Data Science,106,Y
+201127,Zach Baker,UG,Computer Science,114,Y
+201128,Jason Carter,UG,Information Systems,80,Y
+201129,Grace Brooks,UG,Data Science,0,Y
+201130,Grace Scott,UG,Engineering,56,Y
+201131,Maya Wright,UG,Data Science,52,Y
+201132,Leila Brown,UG,Computer Science,82,Y
+201133,Mina Walker,UG,Data Science,110,Y
+201134,Zach Davis,UG,Data Science,63,Y
+201135,Emma Young,UG,Cybersecurity,67,Y
+201136,Mariam Bennani,UG,Computer Science,88,Y
+201137,Karim Rahmani,UG,Data Science,83,Y
+201138,Noah King,GR,Engineering,1,Y
+201139,Leila Rahmani,UG,Cybersecurity,0,Y
+201140,Ali Hassan,UG,Information Systems,5,Y
+201141,Lina Williams,UG,Engineering,107,Y
+201142,Chloe Walker,GR,Mathematics,38,Y
+201143,Amira Young,UG,Cybersecurity,19,Y
+201144,Ethan Wright,UG,Information Systems,96,Y
+201145,Daniel Khalil,UG,Information Systems,93,Y
+201146,Noah Clark,UG,Information Systems,106,Y
+201147,Ali Farah,UG,Computer Science,87,Y
+201148,Layla Green,UG,Cybersecurity,20,Y
+201149,Amira Anderson,UG,Cybersecurity,42,Y
+201150,Layla Mansouri,UG,Mathematics,1,Y
+201151,Amira Williams,UG,Information Systems,58,Y
+201152,Michael Hassan,UG,Data Science,53,Y
+201153,Ali Rahmani,UG,Mathematics,32,Y
+201154,Alex Brown,UG,Mathematics,92,Y
+201155,Zach Farah,UG,Data Science,34,Y
+201156,Alex Clark,UG,Mathematics,44,Y
+201157,Jason Young,UG,Mathematics,74,Y
+201158,Daniel El Amrani,UG,Mathematics,45,Y
+201159,Layla Wright,UG,Engineering,37,Y
+201160,Zach Green,GR,Engineering,17,Y
+201161,Nabil Anderson,UG,Data Science,10,N
+201162,Emma Johnson,UG,Mathematics,12,Y
+201163,Tariq King,UG,Engineering,97,Y
+201164,Sara Thomas,UG,Mathematics,79,Y
+201165,Amira Wright,UG,Information Systems,21,Y
+201166,Mariam Carter,UG,Mathematics,28,Y
+201167,Sara Thomas,UG,Data Science,98,Y
+201168,Samir Farah,GR,Cybersecurity,19,Y
+201169,Rania Rahmani,UG,Mathematics,117,Y
+201170,Salma Wilson,UG,Data Science,72,Y
+201171,Grace Walker,GR,Computer Science,19,Y
+201172,Rita Wilson,UG,Data Science,107,Y
+201173,Ryan El Amrani,UG,Computer Science,99,Y
+201174,Grace Baker,UG,Information Systems,124,Y
+201175,Ethan Brown,UG,Mathematics,106,N
+201176,Jason Johnson,UG,Engineering,92,Y
+201177,Ali Wright,GR,Engineering,18,Y
+201178,Rita Carter,UG,Cybersecurity,95,Y
+201179,Omar Hall,UG,Information Systems,35,Y
+201180,Sara Wilson,UG,Mathematics,14,Y
+201181,Lucas Hall,UG,Cybersecurity,94,Y
+201182,Grace Saidi,GR,Mathematics,4,N
+201183,Zach El Amrani,UG,Mathematics,46,Y
+201184,Evan Scott,UG,Mathematics,4,Y
+201185,Ryan Young,GR,Computer Science,30,Y
+201186,Rania Hall,UG,Mathematics,24,Y
+201187,Rania Clark,GR,Cybersecurity,23,Y
+201188,Ryan Scott,UG,Engineering,117,Y
+201189,Mariam Martinez,UG,Data Science,54,Y
+201190,Lina Rahmani,UG,Cybersecurity,97,Y
+201191,Noah Carter,UG,Mathematics,87,Y
+201192,Leila Taylor,UG,Engineering,17,Y
+201193,Jason Clark,UG,Mathematics,108,Y
+201194,James Taylor,UG,Data Science,25,Y
+201195,Mina Johnson,UG,Cybersecurity,30,Y
+201196,Rania Baker,UG,Data Science,120,Y
+201197,Rania Farah,UG,Engineering,29,Y
+201198,Karim Bennani,UG,Computer Science,91,Y
+201199,Sophia Williams,UG,Information Systems,124,Y
+201200,Ethan Mansouri,UG,Computer Science,25,Y
+201201,Lucas Naji,UG,Mathematics,31,Y
+201202,Mariam Carter,UG,Cybersecurity,50,Y
+201203,Nora Martinez,UG,Data Science,62,Y
+201204,Nabil Bennani,UG,Information Systems,47,Y
+201205,Samir Walker,UG,Data Science,24,Y
+201206,Amira Bennani,UG,Computer Science,107,Y
+201207,Nabil Johnson,UG,Cybersecurity,38,Y
+201208,James King,UG,Computer Science,71,N
+201209,Amira Thomas,UG,Cybersecurity,53,Y
+201210,Chloe Young,GR,Data Science,37,Y
+201211,Lina Hassan,UG,Cybersecurity,29,Y
+201212,Adam Martinez,UG,Mathematics,117,Y
+201213,Rita Farah,UG,Data Science,121,Y
+201214,David Saidi,GR,Cybersecurity,27,Y
+201215,Chloe Johnson,UG,Engineering,55,Y
+201216,Maya Naji,GR,Data Science,37,Y
+201217,Mariam Lewis,UG,Cybersecurity,52,Y
+201218,Chloe Rahmani,UG,Cybersecurity,69,Y
+201219,Lucas Carter,UG,Engineering,2,N
+201220,James Brown,UG,Engineering,124,Y
+201221,Amira Baker,UG,Computer Science,53,Y
+201222,Lucas Lewis,UG,Information Systems,22,Y
+201223,Lucas Martinez,UG,Engineering,79,Y
+201224,Lina Anderson,UG,Cybersecurity,75,Y
+201225,Evan Baker,UG,Computer Science,11,Y
+201226,Grace Hall,GR,Computer Science,32,Y
+201227,Omar Taylor,UG,Mathematics,47,Y
+201228,Karim Wilson,GR,Mathematics,15,Y
+201229,Ali Wilson,UG,Mathematics,8,Y
+201230,Aya Davis,UG,Data Science,35,Y
+201231,Grace Taylor,UG,Information Systems,97,N
+201232,Evan Young,UG,Cybersecurity,70,Y
+201233,Omar Davis,UG,Cybersecurity,123,Y
+201234,Lina Clark,GR,Engineering,0,Y
+201235,Youssef Saidi,UG,Engineering,110,Y
+201236,Samir Khalil,UG,Mathematics,28,Y
+201237,Samir Johnson,UG,Mathematics,31,Y
+201238,Daniel King,UG,Cybersecurity,99,Y
+201239,Tariq Farah,UG,Data Science,101,Y
+201240,Nora Martinez,UG,Data Science,31,Y
+201241,Karim Walker,UG,Engineering,90,Y
+201242,Zach Hassan,UG,Engineering,29,Y
+201243,Layla Naji,UG,Mathematics,115,Y
+201244,Mina Saidi,UG,Data Science,71,Y
+201245,Lucas Lewis,UG,Data Science,16,Y
+201246,David Walker,UG,Information Systems,3,Y
+201247,David Brooks,UG,Engineering,11,Y
+201248,Rania Wilson,UG,Cybersecurity,52,Y
+201249,Nadia Wright,GR,Computer Science,11,Y
+201250,Sophia Young,UG,Information Systems,111,Y
+201251,Tariq Carter,UG,Computer Science,103,Y
+201252,Evan Wright,UG,Information Systems,77,Y
+201253,Ethan Carter,UG,Data Science,92,Y
+201254,Leila Young,GR,Mathematics,1,Y
+201255,Samir Johnson,UG,Computer Science,104,Y
+201256,James Martinez,UG,Cybersecurity,103,Y
+201257,Nora Lewis,UG,Information Systems,13,Y
+201258,Salma Carter,UG,Engineering,100,Y
+201259,Chloe King,UG,Data Science,61,Y
+201260,David Saidi,UG,Information Systems,121,Y
+201261,Chloe Saidi,UG,Engineering,35,Y
+201262,Grace Khalil,GR,Mathematics,5,Y
+201263,Salma Khalil,UG,Cybersecurity,33,Y
+201264,Ethan Naji,UG,Cybersecurity,42,Y
+201265,Mina Bennani,UG,Computer Science,41,Y
+201266,Hana Thomas,GR,Mathematics,27,Y
+201267,Jason Martinez,UG,Engineering,79,Y
+201268,Chloe Brown,UG,Data Science,96,Y
+201269,Evan Brown,UG,Information Systems,61,Y
+201270,Mariam Mansouri,UG,Engineering,73,Y
+201271,Youssef Young,UG,Engineering,68,Y
+201272,Layla Clark,UG,Mathematics,127,Y
+201273,Aya Young,UG,Data Science,66,Y
+201274,Evan Hall,UG,Cybersecurity,125,Y
+201275,Ali Thomas,GR,Cybersecurity,6,Y
+201276,Emma Anderson,UG,Computer Science,63,Y
+201277,Salma Davis,UG,Computer Science,33,N
+201278,Nora Farah,UG,Engineering,64,Y
+201279,Sofia Baker,UG,Mathematics,2,Y
+201280,Sofia Khalil,UG,Mathematics,13,Y
+201281,Karim Hassan,UG,Mathematics,103,Y
+201282,Sara El Amrani,UG,Information Systems,27,Y
+201283,Salma Mansouri,GR,Computer Science,32,Y
+201284,Lucas Carter,UG,Cybersecurity,74,Y
+201285,Salma Martinez,UG,Information Systems,27,N
+201286,Youssef El Amrani,UG,Information Systems,50,Y
+201287,Leila Wilson,GR,Mathematics,27,Y
+201288,Layla Khalil,UG,Computer Science,16,Y
+201289,Ryan Farah,UG,Information Systems,55,Y
+201290,Nabil Davis,UG,Cybersecurity,58,Y
+201291,Omar Thomas,UG,Data Science,128,Y
+201292,Ethan Hassan,UG,Mathematics,73,Y
+201293,Ethan Thomas,UG,Information Systems,98,Y
+201294,Salma Hassan,UG,Computer Science,42,Y
+201295,Noah Hassan,UG,Data Science,18,Y
+201296,Ethan Lewis,UG,Mathematics,50,Y
+201297,Nadia El Amrani,UG,Computer Science,4,Y
+201298,Evan Wright,GR,Engineering,19,Y
+201299,Salma Hassan,UG,Mathematics,41,Y
+201300,James Hall,UG,Information Systems,32,Y
+201301,Lucas Thomas,UG,Cybersecurity,69,Y
+201302,Michael Taylor,UG,Cybersecurity,74,Y
+201303,Evan Hall,UG,Cybersecurity,49,Y
+201304,Adam Young,UG,Information Systems,93,Y
+201305,David Wright,UG,Cybersecurity,125,Y
+201306,Daniel Young,UG,Engineering,117,Y
+201307,Emma Brooks,UG,Cybersecurity,85,Y
+201308,David Scott,UG,Engineering,3,Y
+201309,Adam El Amrani,UG,Information Systems,57,Y
+201310,Mariam Brown,UG,Mathematics,37,Y
+201311,Evan Lewis,UG,Information Systems,92,Y
+201312,David Scott,UG,Engineering,23,Y
+201313,Sara El Amrani,UG,Engineering,77,Y
+201314,Amira Rahmani,UG,Mathematics,101,Y
+201315,Youssef Scott,UG,Computer Science,72,Y
+201316,Ethan Baker,UG,Data Science,39,Y
+201317,Ryan Scott,UG,Engineering,93,Y
+201318,Mariam Martinez,UG,Computer Science,40,Y
+201319,Sophia Carter,UG,Computer Science,116,Y
+201320,Sophia Williams,UG,Cybersecurity,58,Y
+201321,Michael Young,UG,Information Systems,68,Y
+201322,Nadia Williams,UG,Engineering,108,Y
+201323,Ali Naji,UG,Data Science,35,Y
+201324,Ethan Anderson,UG,Information Systems,67,Y
+201325,Youssef Clark,GR,Engineering,29,Y
+201326,Evan Rahmani,UG,Engineering,45,Y
+201327,Maya Johnson,UG,Information Systems,103,Y
+201328,Jason Bennani,UG,Information Systems,118,Y
+201329,David Walker,UG,Cybersecurity,45,Y
+201330,Lina Clark,UG,Computer Science,32,Y
+201331,Emma Baker,UG,Data Science,125,Y
+201332,Mina King,UG,Engineering,32,Y
+201333,Michael Wilson,GR,Cybersecurity,15,Y
+201334,Ryan Clark,UG,Cybersecurity,37,N
+201335,Karim Bennani,UG,Cybersecurity,32,Y
+201336,Maya King,UG,Information Systems,25,Y
+201337,Adam Mansouri,UG,Mathematics,115,Y
+201338,David Johnson,UG,Cybersecurity,53,Y
+201339,Emma Naji,UG,Cybersecurity,77,Y
+201340,Nora Anderson,UG,Engineering,63,Y
+201341,Hana Rahmani,UG,Mathematics,94,Y
+201342,Maya Rahmani,UG,Data Science,107,Y
+201343,Alex Brown,UG,Mathematics,15,Y
+201344,Sofia Thomas,UG,Data Science,113,Y
+201345,Maya Wright,UG,Information Systems,119,Y
+201346,Emma Johnson,GR,Mathematics,12,Y
+201347,Nora Wilson,UG,Mathematics,28,Y
+201348,James Farah,GR,Data Science,8,Y
+201349,Mariam Walker,UG,Computer Science,79,Y
+201350,James Thomas,UG,Cybersecurity,40,Y
+201351,Rania Johnson,UG,Computer Science,110,Y
+201352,Layla Rahmani,UG,Mathematics,45,Y
+201353,Jason Lewis,GR,Data Science,19,Y
+201354,Leila Walker,UG,Computer Science,93,Y
+201355,Sofia Wilson,UG,Information Systems,114,Y
+201356,Rita Baker,UG,Information Systems,70,Y
+201357,Jason Davis,UG,Computer Science,89,Y
+201358,Daniel Martinez,UG,Engineering,17,Y
+201359,Jason Thomas,GR,Data Science,38,Y
+201360,David Saidi,UG,Cybersecurity,102,Y
+201361,Alex Green,UG,Engineering,107,Y
+201362,Tariq Martinez,UG,Data Science,110,Y
+201363,Jason Rahmani,UG,Information Systems,101,Y
+201364,Grace Carter,UG,Mathematics,117,Y
+201365,David Clark,UG,Data Science,114,Y
+201366,Daniel Mansouri,UG,Cybersecurity,81,Y
+201367,David Rahmani,GR,Cybersecurity,25,Y
+201368,Adam Johnson,UG,Cybersecurity,42,Y
+201369,Lucas Davis,UG,Engineering,122,Y
+201370,Nabil Scott,UG,Information Systems,26,Y
+201371,Emma Thomas,GR,Information Systems,16,Y
+201372,Daniel Wilson,UG,Engineering,95,Y
+201373,Emma Brown,UG,Engineering,116,Y
+201374,Salma Young,UG,Computer Science,3,Y
+201375,Sofia Davis,UG,Information Systems,35,Y
+201376,Jason Carter,UG,Computer Science,65,Y
+201377,Ethan Naji,UG,Computer Science,29,Y
+201378,Ali Green,UG,Cybersecurity,105,Y
+201379,Chloe Scott,UG,Cybersecurity,37,Y
+201380,Zach Clark,UG,Data Science,78,Y
+201381,Samir Thomas,UG,Mathematics,60,Y
+201382,Ryan Brooks,GR,Information Systems,41,Y
+201383,Sofia Farah,UG,Engineering,46,Y
+201384,Adam Scott,UG,Cybersecurity,116,Y
+201385,Ali Thomas,UG,Mathematics,69,Y
+201386,David Scott,UG,Information Systems,121,Y
+201387,Tariq Anderson,UG,Information Systems,36,Y
+201388,Michael Young,UG,Engineering,9,Y
+201389,Youssef Scott,UG,Data Science,112,Y
+201390,Alex Naji,UG,Information Systems,74,Y
+201391,Mina Naji,GR,Data Science,6,Y
+201392,Aya Taylor,GR,Computer Science,19,Y
+201393,Amira Martinez,UG,Engineering,37,Y
+201394,Daniel King,UG,Information Systems,79,Y
+201395,David Saidi,GR,Engineering,25,Y
+201396,Youssef Naji,UG,Computer Science,16,Y
+201397,Grace Green,UG,Mathematics,12,Y
+201398,Sofia Anderson,UG,Engineering,126,Y
+201399,Rita Anderson,UG,Mathematics,108,Y
+201400,Lina Brooks,GR,Data Science,15,Y
+201401,Nora Rahmani,GR,Mathematics,38,Y
+201402,Amira Williams,UG,Computer Science,78,Y
+201403,Sofia Walker,UG,Engineering,8,Y
+201404,Salma Davis,UG,Computer Science,30,Y
+201405,Lucas Naji,GR,Mathematics,25,Y
+201406,Adam Baker,UG,Data Science,104,Y
+201407,Amira Williams,UG,Data Science,6,Y
+201408,Sophia Brown,UG,Cybersecurity,118,Y
+201409,Lina Bennani,UG,Data Science,107,Y
+201410,Nadia Martinez,UG,Data Science,27,Y
+201411,Nora Mansouri,UG,Computer Science,54,Y
+201412,Noah Anderson,UG,Information Systems,24,Y
+201413,Mina King,UG,Engineering,20,Y
+201414,Adam Thomas,UG,Computer Science,14,Y
+201415,Youssef Baker,UG,Computer Science,102,Y
+201416,Youssef Scott,UG,Computer Science,55,Y
+201417,Rita King,UG,Mathematics,63,Y
+201418,Michael Brown,UG,Data Science,112,Y
+201419,Lucas Brown,GR,Engineering,6,Y
+201420,Noah Green,UG,Computer Science,126,N
+201421,Omar Bennani,UG,Computer Science,65,Y
+201422,Chloe El Amrani,UG,Data Science,51,Y
+201423,Jason Clark,UG,Cybersecurity,87,Y
+201424,Salma Mansouri,UG,Data Science,90,Y
+201425,Jason Scott,UG,Computer Science,100,Y
+201426,Noah Wright,UG,Engineering,75,Y
+201427,Ryan Anderson,UG,Mathematics,79,Y
+201428,Hana Taylor,UG,Information Systems,80,Y
+201429,Nora Wright,UG,Data Science,118,Y
+201430,Samir Khalil,UG,Cybersecurity,37,Y
+201431,Noah Saidi,GR,Computer Science,5,Y
+201432,Maya Clark,UG,Information Systems,15,Y
+201433,Leila Baker,UG,Data Science,115,Y
+201434,Layla Martinez,GR,Data Science,21,Y
+201435,Nadia Mansouri,UG,Engineering,52,Y
+201436,Adam Naji,UG,Data Science,99,Y
+201437,Amira Brooks,UG,Mathematics,107,Y
+201438,Omar El Amrani,UG,Mathematics,61,Y
+201439,Mariam Scott,UG,Mathematics,71,Y
+201440,Youssef Martinez,UG,Mathematics,74,Y
+201441,Youssef Young,UG,Data Science,97,Y
+201442,Hana Hall,UG,Information Systems,22,Y
+201443,Adam Scott,UG,Computer Science,56,Y
+201444,Ryan Baker,UG,Engineering,27,Y
+201445,Sara Rahmani,UG,Engineering,109,Y
+201446,Lina Naji,UG,Mathematics,71,Y
+201447,David Walker,UG,Data Science,98,Y
+201448,Aya Martinez,UG,Data Science,24,Y
+201449,David King,UG,Cybersecurity,46,Y
+201450,Aya Farah,UG,Information Systems,65,Y
+201451,Samir Young,UG,Information Systems,70,Y
+201452,Mariam Mansouri,UG,Data Science,39,Y
+201453,Samir Hassan,UG,Engineering,74,Y
+201454,Ali Clark,UG,Cybersecurity,34,Y
+201455,Noah Clark,UG,Cybersecurity,15,Y
+201456,Rania Taylor,UG,Computer Science,94,Y
+201457,Sara Lewis,UG,Computer Science,101,Y
+201458,Rita Rahmani,GR,Computer Science,33,Y
+201459,Ethan Brown,UG,Engineering,117,Y
+201460,Lina Farah,UG,Mathematics,50,Y
+201461,Emma Farah,UG,Cybersecurity,16,Y
+201462,Daniel Wilson,UG,Engineering,44,Y
+201463,Ali Wilson,UG,Data Science,102,Y
+201464,Mariam Green,UG,Mathematics,10,Y
+201465,Sofia Saidi,GR,Engineering,26,N
+201466,Layla Taylor,GR,Computer Science,43,N
+201467,Amira Saidi,UG,Computer Science,81,Y
+201468,Sofia Hall,GR,Information Systems,17,Y
+201469,Ryan Saidi,UG,Computer Science,107,Y
+201470,Youssef Naji,GR,Information Systems,36,Y
+201471,Lucas Brown,GR,Information Systems,36,Y
+201472,Rita Saidi,UG,Computer Science,109,Y
+201473,Alex Williams,UG,Information Systems,78,Y
+201474,Salma Taylor,UG,Cybersecurity,16,Y
+201475,Layla Naji,UG,Data Science,106,Y
+201476,Salma Green,UG,Information Systems,70,Y
+201477,Ryan Scott,UG,Mathematics,69,Y
+201478,Emma Walker,UG,Cybersecurity,11,Y
+201479,Nabil Hassan,GR,Cybersecurity,29,Y
+201480,Tariq Lewis,UG,Information Systems,130,Y
+201481,Nora Khalil,UG,Computer Science,72,Y
+201482,Mariam El Amrani,UG,Mathematics,119,Y
+201483,David Brown,UG,Mathematics,37,Y
+201484,Nora Martinez,UG,Mathematics,18,Y
+201485,Chloe Martinez,UG,Information Systems,27,N
+201486,Noah Bennani,UG,Engineering,45,Y
+201487,Karim Farah,UG,Information Systems,128,Y
+201488,Sophia Hall,UG,Information Systems,1,Y
+201489,Sophia Young,UG,Computer Science,50,Y
+201490,Alex Williams,UG,Computer Science,92,Y
+201491,Samir Hassan,UG,Engineering,49,Y
+201492,Nora King,UG,Computer Science,48,Y
+201493,Karim Martinez,UG,Mathematics,6,Y
+201494,Nadia Wright,UG,Data Science,67,Y
+201495,Adam Johnson,UG,Data Science,122,Y
+201496,Lina Green,GR,Engineering,17,Y
+201497,Chloe Lewis,UG,Cybersecurity,10,Y
+201498,James Brooks,UG,Data Science,102,Y
+201499,Adam Rahmani,UG,Computer Science,68,Y
+201500,Chloe Johnson,UG,Data Science,39,Y

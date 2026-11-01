@@ -1,0 +1,81 @@
+course_code,section,title,capacity,credits
+CPSC100,010,Programming I,50,4
+MATH113,010,Programming II,40,3
+STAT126,030,Data Structures,35,4
+INFO139,001,Algorithms,35,3
+CYBR152,030,Operating Systems,25,3
+PHYS165,020,Computer Networks,30,3
+ENGR178,020,Database Systems,40,3
+CPSC191,030,Software Engineering,50,3
+MATH204,030,Computer Security,30,3
+STAT217,030,Artificial Intelligence,30,3
+INFO230,030,Machine Learning,60,3
+CYBR243,010,Web Development,30,3
+PHYS256,001,Mobile Computing,20,4
+ENGR269,010,Cloud Computing,60,3
+CPSC282,030,Computer Architecture,35,3
+MATH295,030,Discrete Structures,60,3
+STAT308,030,Linear Algebra,20,3
+INFO321,030,Calculus I,40,3
+CYBR334,030,Calculus II,60,3
+PHYS347,001,Statistics I,50,3
+ENGR360,020,Probability,20,4
+CPSC373,001,Data Mining,30,3
+MATH386,010,Information Retrieval,30,4
+STAT399,001,Cryptography,60,3
+INFO412,010,Parallel Computing,40,3
+CYBR425,001,Theory of Computation,60,4
+PHYS438,001,Human Computer Interaction,60,3
+ENGR451,030,Capstone Project,60,3
+CPSC464,001,Numerical Methods,60,3
+MATH477,001,Systems Programming,40,3
+STAT490,001,Compiler Design,50,3
+INFO503,010,Computer Graphics,30,3
+CYBR516,030,Distributed Systems,20,3
+PHYS529,001,Data Visualization,60,3
+ENGR542,020,Secure Coding,60,3
+CPSC555,030,Digital Forensics,50,3
+MATH568,010,Network Security,30,3
+STAT581,010,Big Data Systems,40,4
+INFO594,010,IoT Systems,35,3
+CYBR607,001,Advanced C++,25,4
+PHYS620,010,Programming I 2,60,3
+ENGR633,020,Programming II 2,60,3
+CPSC646,010,Data Structures 2,20,4
+MATH659,030,Algorithms 2,20,3
+STAT672,020,Operating Systems 2,50,3
+INFO685,030,Computer Networks 2,30,4
+CYBR108,020,Database Systems 2,25,4
+PHYS121,001,Software Engineering 2,30,3
+ENGR134,030,Computer Security 2,60,4
+CPSC147,020,Artificial Intelligence 2,35,3
+MATH160,010,Machine Learning 2,60,3
+STAT173,010,Web Development 2,20,3
+INFO186,010,Mobile Computing 2,25,3
+CYBR199,020,Cloud Computing 2,50,3
+PHYS212,010,Computer Architecture 2,30,3
+ENGR225,020,Discrete Structures 2,20,3
+CPSC238,020,Linear Algebra 2,50,3
+MATH251,030,Calculus I 2,35,3
+STAT264,030,Calculus II 2,40,3
+INFO277,020,Statistics I 2,40,4
+CYBR290,001,Probability 2,40,3
+PHYS303,001,Data Mining 2,60,3
+ENGR316,020,Information Retrieval 2,30,4
+CPSC329,030,Cryptography 2,50,3
+MATH342,020,Parallel Computing 2,30,3
+STAT355,010,Theory of Computation 2,35,3
+INFO368,001,Human Computer Interaction 2,30,4
+CYBR381,001,Capstone Project 2,20,4
+PHYS394,010,Numerical Methods 2,50,3
+ENGR407,001,Systems Programming 2,40,4
+CPSC420,001,Compiler Design 2,60,3
+MATH433,001,Computer Graphics 2,35,3
+STAT446,020,Distributed Systems 2,60,3
+INFO459,020,Data Visualization 2,35,3
+CYBR472,010,Secure Coding 2,30,4
+PHYS485,001,Digital Forensics 2,25,4
+ENGR498,001,Network Security 2,35,3
+CPSC511,020,Big Data Systems 2,50,3
+MATH524,020,IoT Systems 2,30,3
+STAT537,001,Advanced C++ 2,25,3
