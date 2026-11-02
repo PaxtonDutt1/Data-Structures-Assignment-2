@@ -3,7 +3,6 @@
 #include <stdexcept>
 
 // A small generic singly linked list.
-// TODO: Complete the operations marked below.
 // You may add iterators or helper functions if useful.
 
 template <typename T>
