@@ -206,9 +206,7 @@ void DataRepository::loadPrerequisites(const std::string& filename) {
 }
 
 void DataRepository::loadCompletedCourses(const std::string& filename) {
-    int failedGrades = 0;
-    readCsv(filename, 3,
-            [this, &failedGrades](const std::vector<std::string>& fields) -> std::string {
+    readCsv(filename, 3, [this](const std::vector<std::string>& fields) -> std::string {
         int studentId = 0;
         if (!parseNonNegativeInt(fields[0], studentId)) {
             return "invalid student ID '" + fields[0] + "'";
@@ -223,16 +221,10 @@ void DataRepository::loadCompletedCourses(const std::string& filename) {
         if (!isValidGrade(fields[2])) {
             return "invalid grade '" + fields[2] + "'";
         }
-        // Policy: an F is valid history but does not satisfy a prerequisite.
-        if (fields[2] == "F") {
-            ++failedGrades;
-        } else {
-            student->addCompletedCourse(fields[1]);
-        }
+        // Policy: any recorded grade, including F, counts as completing the course.
+        student->addCompletedCourse(fields[1]);
         return "";
     });
-    std::cout << "  " << failedGrades
-              << " F grades not counted toward prerequisites\n";
 }
 
 void DataRepository::loadRegistrations(const std::string& filename) {
