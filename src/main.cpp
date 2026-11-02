@@ -24,8 +24,7 @@ int main(int argc, char* argv[]) {
 
     try {
         DataRepository repository;
-        // TODO: load repository and handle data-related errors.
-        // repository.loadAll(dataDirectory);
+        repository.loadAll(dataDirectory);
 
         RegistrationManager manager(repository);
         // manager.initializeFromRepository();
