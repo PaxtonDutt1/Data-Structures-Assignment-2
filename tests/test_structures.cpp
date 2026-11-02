@@ -5,6 +5,7 @@
 #include <vector>
 #include "ArrayQueue.h"
 #include <stdexcept>
+#include "HashTable.h"
 
 static void testLinkedList() {
     LinkedList<int> list;
@@ -84,9 +85,74 @@ static void testArrayQueue() {
     assert(names.empty());
 }
 
+static void testHashTable() {
+    // Basic operations, including replacing an existing value
+    HashTable<std::string, int> table;
+    assert(table.empty());
+    assert(table.find("CPSC100") == nullptr);
+    assert(!table.erase("CPSC100"));
+    table.insert("CPSC100", 50);
+    table.insert("MATH113", 40);
+    table.insert("CPSC100", 55);
+    assert(table.size() == 2);
+    assert(*table.find("CPSC100") == 55);
+    assert(table.erase("CPSC100"));
+    assert(table.find("CPSC100") == nullptr);
+    assert(!table.erase("CPSC100"));
+    assert(table.size() == 1);
+
+    // Collisions: 1 and 4 share a bucket when there are 3 buckets
+    HashTable<int, std::string> colliding(3);
+    colliding.insert(1, "one");
+    colliding.insert(4, "four");
+    assert(colliding.bucketCount() == 3);        // no rehash yet
+    assert(*colliding.find(1) == "one");
+    assert(*colliding.find(4) == "four");
+    assert(colliding.erase(1));
+    assert(colliding.find(1) == nullptr);
+    assert(*colliding.find(4) == "four");
+
+    // Forced rehash from a small bucket count keeps every entry
+    HashTable<int, int> small(2);
+    int* firstValue = nullptr;
+    std::size_t rehashes = 0;
+    for (int key = 0; key < 1000; ++key) {
+        const std::size_t before = small.bucketCount();
+        const double loadBefore = small.loadFactor();
+        small.insert(key, key * 10);
+        if (key == 0) {
+            firstValue = small.find(0);
+        }
+        if (small.bucketCount() != before) {
+            ++rehashes;
+            std::cout << "Rehash: " << before << " -> " << small.bucketCount()
+                      << " buckets, load " << loadBefore << " -> "
+                      << small.loadFactor() << '\n';
+        }
+        assert(small.loadFactor() <= 0.75);
+    }
+    assert(rehashes > 0);
+    assert(small.size() == 1000);
+    for (int key = 0; key < 1000; ++key) {
+        assert(small.find(key) != nullptr && *small.find(key) == key * 10);
+    }
+    assert(firstValue == small.find(0));   // pointer survived every rehash
+
+    std::size_t visited = 0;
+    small.forEach([&visited](int, int) { ++visited; });
+    assert(visited == 1000);
+
+    // The type combination RegistrationManager uses
+    HashTable<std::string, ArrayQueue<int>> waitlists;
+    waitlists.insert("CPSC100", ArrayQueue<int>());
+    waitlists.find("CPSC100")->enqueue(200001);
+    assert(waitlists.find("CPSC100")->front() == 200001);
+}
+
 int main() {
     testLinkedList();
     testArrayQueue();
+    testHashTable();
     std::cout << "All tests passed.\n";
     return 0;
 }
