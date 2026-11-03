@@ -20,6 +20,9 @@ private:
 
     // Stack used for undoing the most recent successful registration/drop.
     ArrayStack<RegistrationAction> undoStack;
+    
+    // The most recent result, kept so tests can check the reason given.
+    std::string lastMessage;
 
 public:
     explicit RegistrationManager(DataRepository& repository);
@@ -35,6 +38,7 @@ public:
     bool isRegistered(int studentId, const std::string& courseCode) const;
     int enrollmentCount(const std::string& courseCode) const;
     std::size_t activeRegistrationCount() const;
+    const std::string& getLastMessage() const;
 
     void printStudentSchedule(int studentId) const;
     void printCourseRoster(const std::string& courseCode) const;
@@ -46,5 +50,5 @@ private:
     bool prerequisitesSatisfied(const Student& student, const Course& course) const;
     bool canRegister(const Student& student, const Course& course, std::string& reason) const;
 
-    // Internal helpers may be added.
+    void report(const std::string& message);
 };

@@ -15,12 +15,36 @@ void RegistrationManager::initializeFromRepository() {
 
 bool RegistrationManager::registerStudent(
     int studentId, const std::string& courseCode) {
-    // TODO:
-    // Validate student/course.
-    // Check active status, duplicates, prerequisites, and capacity.
-    // If full, place the student in the FIFO waitlist.
-    // If successful, add to registrations and push undo information.
-    return false;
+    const Student* student = repository.getStudent(studentId);
+    if (student == nullptr) {
+        report("Registration failed: unknown student ID " + std::to_string(studentId) + ".");
+        return false;
+    }
+
+    const Course* course = repository.getCourse(courseCode);
+    if (course == nullptr) {
+        report("Registration failed: unknown course code " + courseCode + ".");
+        return false;
+    }
+
+    std::string reason;
+    if (!canRegister(*student, *course, reason)) {
+        report("Registration failed: " + reason);
+        return false;
+    }
+
+    const int enrolled = enrollmentCount(courseCode);
+    if (enrolled >= course->getCapacity()) {
+        report("Registration failed: " + courseCode + " is full (" +
+               std::to_string(enrolled) + "/" +
+               std::to_string(course->getCapacity()) + ").");
+        return false;
+    }
+
+    registrations.pushFront(RegistrationRecord{studentId, courseCode});
+    undoStack.push(RegistrationAction{ActionType::Register, studentId, courseCode});
+    report("Registered student " + std::to_string(studentId) + " in " + courseCode + ".");
+    return true;
 }
 
 bool RegistrationManager::dropStudent(
@@ -82,13 +106,46 @@ void RegistrationManager::saveRegistrations(const std::string& filename) const {
 
 bool RegistrationManager::prerequisitesSatisfied(
     const Student& student, const Course& course) const {
-    // TODO
-    return false;
+    for (const std::string& prerequisite : course.getPrerequisites()) {
+        if (!student.hasCompleted(prerequisite)) {
+            return false;
+        }
+    }
+    return true;
 }
 
+// Checks whether a student may hold a seat, apart from seat availability.
+// Waitlist processing will reuse this, so capacity is checked separately.
 bool RegistrationManager::canRegister(
     const Student& student, const Course& course, std::string& reason) const {
-    // TODO:
-    // centralize validation and set a useful reason on failure
-    return false;
+    const std::string studentText = "student " + std::to_string(student.getId());
+
+    if (!student.isActive()) {
+        reason = studentText + " is not active.";
+        return false;
+    }
+    if (isRegistered(student.getId(), course.getCode())) {
+        reason = studentText + " is already registered in " + course.getCode() + ".";
+        return false;
+    }
+    if (!prerequisitesSatisfied(student, course)) {
+        reason = studentText + " is missing prerequisite(s) for " + course.getCode() + ":";
+        for (const std::string& prerequisite : course.getPrerequisites()) {
+            if (!student.hasCompleted(prerequisite)) {
+                reason += " " + prerequisite;
+            }
+        }
+        reason += ".";
+        return false;
+    }
+    return true;
+}
+
+void RegistrationManager::report(const std::string& message) {
+    lastMessage = message;
+    std::cout << message << '\n';
+}
+
+const std::string& RegistrationManager::getLastMessage() const {
+    return lastMessage;
 }
