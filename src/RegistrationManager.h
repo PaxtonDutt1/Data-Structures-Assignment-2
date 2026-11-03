@@ -13,9 +13,7 @@ private:
     // Active registrations are stored in a linked structure.
     LinkedList<RegistrationRecord> registrations;
 
-    // One queue per course is required.
-    // TODO: decide how to associate course codes with waitlist queues
-    // using your hash-table implementation.
+    // One FIFO queue per course, created the first time a course needs it.
     HashTable<std::string, ArrayQueue<WaitlistEntry>> waitlists;
 
     // Stack used for undoing the most recent successful registration/drop.
@@ -39,6 +37,8 @@ public:
     int enrollmentCount(const std::string& courseCode) const;
     std::size_t activeRegistrationCount() const;
     const std::string& getLastMessage() const;
+    bool isWaitlisted(int studentId, const std::string& courseCode) const;
+    std::size_t waitlistSize(const std::string& courseCode) const;
 
     void printStudentSchedule(int studentId) const;
     void printCourseRoster(const std::string& courseCode) const;

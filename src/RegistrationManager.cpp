@@ -34,10 +34,26 @@ bool RegistrationManager::registerStudent(
     }
 
     const int enrolled = enrollmentCount(courseCode);
-    if (enrolled >= course->getCapacity()) {
-        report("Registration failed: " + courseCode + " is full (" +
-               std::to_string(enrolled) + "/" +
-               std::to_string(course->getCapacity()) + ").");
+        if (enrolled >= course->getCapacity()) {
+        const std::string fullText = courseCode + " is full (" +
+            std::to_string(enrolled) + "/" +
+            std::to_string(course->getCapacity()) + ")";
+
+        if (isWaitlisted(studentId, courseCode)) {
+            report(fullText + ": student " + std::to_string(studentId) +
+                   " is already on the waitlist.");
+            return false;
+        }
+
+        // No undo record: undo covers completed registrations and drops only.
+        if (waitlists.find(courseCode) == nullptr) {
+            waitlists.insert(courseCode, ArrayQueue<WaitlistEntry>());
+        }
+        ArrayQueue<WaitlistEntry>* queue = waitlists.find(courseCode);
+        queue->enqueue(WaitlistEntry{studentId, courseCode});
+        report(fullText + ": student " + std::to_string(studentId) +
+               " added to the waitlist at position " +
+               std::to_string(queue->size()) + ".");
         return false;
     }
 
@@ -82,6 +98,26 @@ int RegistrationManager::enrollmentCount(const std::string& courseCode) const {
         }
     });
     return count;
+}
+
+bool RegistrationManager::isWaitlisted(
+    int studentId, const std::string& courseCode) const {
+    const ArrayQueue<WaitlistEntry>* queue = waitlists.find(courseCode);
+    if (queue == nullptr) {
+        return false;
+    }
+    bool found = false;
+    queue->forEach([&found, studentId](const WaitlistEntry& entry) {
+        if (entry.studentId == studentId) {
+            found = true;
+        }
+    });
+    return found;
+}
+
+std::size_t RegistrationManager::waitlistSize(const std::string& courseCode) const {
+    const ArrayQueue<WaitlistEntry>* queue = waitlists.find(courseCode);
+    return queue == nullptr ? 0 : queue->size();
 }
 
 std::size_t RegistrationManager::activeRegistrationCount() const {

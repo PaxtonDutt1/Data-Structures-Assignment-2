@@ -72,10 +72,51 @@ static void testRegistrationRules(const std::string& dataDirectory) {
     assert(lastMessageHas(manager, "already registered"));
 }
 
+static void testWaitlist(const std::string& dataDirectory) {
+    TestSystem system(dataDirectory);
+    RegistrationManager& manager = system.manager;
+
+    // PHYS165 starts full at 30/30, with an empty waitlist.
+    assert(manager.waitlistSize("PHYS165") == 0);
+    assert(!manager.isWaitlisted(200001, "PHYS165"));
+
+    assert(!manager.registerStudent(200001, "PHYS165"));
+    assert(lastMessageHas(manager, "position 1"));
+    assert(!manager.registerStudent(200002, "PHYS165"));
+    assert(lastMessageHas(manager, "position 2"));
+    assert(manager.isWaitlisted(200001, "PHYS165"));
+    assert(manager.isWaitlisted(200002, "PHYS165"));
+
+    // Duplicate waitlist request
+    assert(!manager.registerStudent(200001, "PHYS165"));
+    assert(lastMessageHas(manager, "already on the waitlist"));
+    assert(manager.waitlistSize("PHYS165") == 2);
+
+    // Waitlisting does not take a seat.
+    assert(!manager.isRegistered(200001, "PHYS165"));
+    assert(manager.enrollmentCount("PHYS165") == 30);
+    assert(manager.activeRegistrationCount() == 2222);
+
+    // Ineligible students cannot join a waitlist.
+    assert(!manager.registerStudent(200028, "PHYS165"));      // inactive
+    assert(lastMessageHas(manager, "not active"));
+    assert(!manager.registerStudent(200001, "INFO503"));      // needs PHYS165
+    assert(lastMessageHas(manager, "missing prerequisite"));
+    assert(manager.waitlistSize("PHYS165") == 2);
+    assert(manager.waitlistSize("INFO503") == 0);
+
+    // An over-capacity course also waitlists, and each course has its own queue.
+    assert(!manager.registerStudent(200001, "ENGR360"));
+    assert(manager.enrollmentCount("ENGR360") == 35);
+    assert(manager.waitlistSize("ENGR360") == 1);
+    assert(manager.waitlistSize("PHYS165") == 2);
+}
+
 int main(int argc, char* argv[]) {
     const std::string dataDirectory = (argc > 1) ? argv[1] : "../data";
     testInitialState(dataDirectory);
     testRegistrationRules(dataDirectory);
+    testWaitlist(dataDirectory);
     std::cout << "All registration tests passed.\n";
     return 0;
 }
