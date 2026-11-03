@@ -85,11 +85,48 @@ bool RegistrationManager::dropStudent(
     return true;
 }
 
+// Changes the registration list directly rather than calling registerStudent
+// or dropStudent, so that undoing an action never creates another undo record.
+// The action is consumed even if it can no longer be reversed.
 bool RegistrationManager::undoLastAction() {
-    // TODO:
-    // Reverse the most recent successful REGISTER or DROP operation.
-    // Avoid creating another undo record while performing the reversal.
-    return false;
+    if (undoStack.empty()) {
+        report("Nothing to undo.");
+        return false;
+    }
+
+    const RegistrationAction action = undoStack.pop();
+    const std::string studentText = "student " + std::to_string(action.studentId);
+
+    if (action.type == ActionType::Register) {
+        if (!registrations.remove(RegistrationRecord{action.studentId, action.courseCode})) {
+            report("Cannot undo registration: " + studentText + " is no longer registered in " +
+                   action.courseCode + ".");
+            return false;
+        }
+        report("Undid registration of " + studentText + " in " + action.courseCode + ".");
+        if (waitlistSize(action.courseCode) > 0) {
+            processWaitlist(action.courseCode);
+        }
+        return true;
+    }
+
+    // Undoing a drop checks only seat availability and duplicates. Prerequisites
+    // are not re-checked because some initial registrations do not meet them.
+    if (isRegistered(action.studentId, action.courseCode)) {
+        report("Cannot undo drop: " + studentText + " is already registered in " +
+               action.courseCode + ".");
+        return false;
+    }
+    const Course* course = repository.getCourse(action.courseCode);
+    const int enrolled = enrollmentCount(action.courseCode);
+    if (course == nullptr || enrolled >= course->getCapacity()) {
+        report("Cannot undo drop of " + studentText + ": " + action.courseCode +
+               " has no open seat.");
+        return false;
+    }
+    registrations.pushFront(RegistrationRecord{action.studentId, action.courseCode});
+    report("Undid drop: " + studentText + " is registered in " + action.courseCode + " again.");
+    return true;
 }
 
 void RegistrationManager::processWaitlist(const std::string& courseCode) {
@@ -164,6 +201,10 @@ bool RegistrationManager::isWaitlisted(
 std::size_t RegistrationManager::waitlistSize(const std::string& courseCode) const {
     const ArrayQueue<WaitlistEntry>* queue = waitlists.find(courseCode);
     return queue == nullptr ? 0 : queue->size();
+}
+
+std::size_t RegistrationManager::undoCount() const {
+    return undoStack.size();
 }
 
 std::size_t RegistrationManager::activeRegistrationCount() const {

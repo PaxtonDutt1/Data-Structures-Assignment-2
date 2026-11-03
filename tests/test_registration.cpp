@@ -166,12 +166,99 @@ static void testDropAndPromotion(const std::string& dataDirectory) {
     assert(lastMessageHas(manager, "is empty"));
 }
 
+static void testUndo(const std::string& dataDirectory) {
+    {
+        TestSystem system(dataDirectory);
+        RegistrationManager& manager = system.manager;
+
+        // Empty undo stack
+        assert(!manager.undoLastAction());
+        assert(lastMessageHas(manager, "Nothing to undo"));
+
+        // Failed operations and waitlist requests create no undo record.
+        manager.registerStudent(999999, "CPSC100");
+        manager.dropStudent(200001, "PHYS165");
+        manager.registerStudent(200001, "PHYS165");           // waitlisted
+        assert(manager.undoCount() == 0);
+        manager.processWaitlist("PHYS165");
+        assert(manager.undoCount() == 0);
+    }
+    {
+        TestSystem system(dataDirectory);
+        RegistrationManager& manager = system.manager;
+
+        // LIFO order, and undo itself creates no new record.
+        assert(manager.registerStudent(200003, "MATH204"));
+        assert(manager.dropStudent(200921, "PHYS165"));
+        assert(manager.undoCount() == 2);
+
+        assert(manager.undoLastAction());                     // reverses the drop
+        assert(manager.isRegistered(200921, "PHYS165"));
+        assert(manager.isRegistered(200003, "MATH204"));
+        assert(manager.undoCount() == 1);
+
+        assert(manager.undoLastAction());                     // reverses the register
+        assert(!manager.isRegistered(200003, "MATH204"));
+        assert(manager.undoCount() == 0);
+        assert(manager.activeRegistrationCount() == 2222);
+
+        assert(!manager.undoLastAction());
+        assert(lastMessageHas(manager, "Nothing to undo"));
+    }
+    {
+        TestSystem system(dataDirectory);
+        RegistrationManager& manager = system.manager;
+
+        // Undoing a drop fails if a promoted student took the seat.
+        manager.registerStudent(200001, "PHYS165");           // waitlisted
+        assert(manager.dropStudent(200921, "PHYS165"));
+        assert(manager.isRegistered(200001, "PHYS165"));      // promoted
+        assert(manager.undoCount() == 1);                     // promotion adds none
+        assert(!manager.undoLastAction());
+        assert(lastMessageHas(manager, "no open seat"));
+        assert(!manager.isRegistered(200921, "PHYS165"));
+        assert(manager.enrollmentCount("PHYS165") == 30);
+        assert(manager.undoCount() == 0);
+    }
+    {
+        TestSystem system(dataDirectory);
+        RegistrationManager& manager = system.manager;
+
+        // Undoing a register opens a seat, which promotes the next student.
+        assert(manager.dropStudent(200921, "PHYS165"));       // 29/30
+        assert(manager.registerStudent(200003, "PHYS165"));   // 30/30
+        manager.registerStudent(200001, "PHYS165");           // waitlisted
+        assert(manager.undoCount() == 2);
+        assert(manager.undoLastAction());
+        assert(!manager.isRegistered(200003, "PHYS165"));
+        assert(manager.isRegistered(200001, "PHYS165"));
+        assert(manager.enrollmentCount("PHYS165") == 30);
+        assert(manager.undoCount() == 1);
+    }
+    {
+        TestSystem system(dataDirectory);
+        RegistrationManager& manager = system.manager;
+
+        // Over-capacity course: restoring would keep it above capacity.
+        assert(manager.dropStudent(200026, "ENGR360"));       // 34/20
+        assert(!manager.undoLastAction());
+        assert(!manager.isRegistered(200026, "ENGR360"));
+
+        // A restored seat is not re-checked against prerequisites, because
+        // initial registrations may not meet them.
+        assert(manager.dropStudent(200471, "ENGR498"));
+        assert(manager.undoLastAction());
+        assert(manager.isRegistered(200471, "ENGR498"));
+    }
+}
+
 int main(int argc, char* argv[]) {
     const std::string dataDirectory = (argc > 1) ? argv[1] : "../data";
     testInitialState(dataDirectory);
     testRegistrationRules(dataDirectory);
     testWaitlist(dataDirectory);
     testDropAndPromotion(dataDirectory);
+    testUndo(dataDirectory);
     std::cout << "All registration tests passed.\n";
     return 0;
 }
