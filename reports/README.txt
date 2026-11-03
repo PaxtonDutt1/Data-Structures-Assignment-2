@@ -1,4 +1,3 @@
-Place the required design/performance report here. See A2_Specification.docx.
 
 Rehash: 2 -> 5 buckets, load 0.5 -> 0.4
 Rehash: 5 -> 11 buckets, load 0.6 -> 0.363636
