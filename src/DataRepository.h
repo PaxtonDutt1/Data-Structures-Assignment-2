@@ -22,6 +22,11 @@ public:
     const Course* getCourse(const std::string& courseCode) const;
 
     const std::vector<RegistrationRecord>& getInitialRegistrations() const;
+    
+    std::size_t studentCount() const;
+    std::size_t courseCount() const;
+    double studentLoadFactor() const;
+    double courseLoadFactor() const;
 
 private:
     void loadStudents(const std::string& filename);

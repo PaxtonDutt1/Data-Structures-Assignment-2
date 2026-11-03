@@ -3,6 +3,8 @@
 #include <cassert>
 #include <iostream>
 #include <string>
+#include <cstdio>
+#include <fstream>
 
 static void testInitialState(const std::string& dataDirectory) {
     DataRepository repository;
@@ -252,6 +254,42 @@ static void testUndo(const std::string& dataDirectory) {
     }
 }
 
+static void testSaving(const std::string& dataDirectory) {
+    TestSystem system(dataDirectory);
+    RegistrationManager& manager = system.manager;
+
+    manager.saveRegistrations("no_such_folder/registrations.csv");
+    assert(lastMessageHas(manager, "Save failed"));
+
+    assert(manager.registerStudent(200003, "MATH204"));
+    const std::string filename = "test_saved_registrations.csv";
+    manager.saveRegistrations(filename);
+    assert(lastMessageHas(manager, "Saved 2223"));
+
+    std::ifstream file(filename);
+    assert(file);
+    std::string line;
+    std::getline(file, line);
+    assert(line == "student_id,course_code");
+    int rows = 0;
+    bool foundNewRegistration = false;
+    while (std::getline(file, line)) {
+        ++rows;
+        foundNewRegistration = foundNewRegistration || line == "200003,MATH204";
+    }
+    assert(rows == 2223);
+    assert(foundNewRegistration);
+    file.close();
+    std::remove(filename.c_str());
+
+    // Display functions must handle unknown IDs and empty results safely.
+    manager.printStudentSchedule(999999);
+    manager.printCourseRoster("NOPE100");
+    manager.printWaitlist("NOPE100");
+    manager.printWaitlist("CPSC100");
+    manager.printStatistics();
+}
+
 int main(int argc, char* argv[]) {
     const std::string dataDirectory = (argc > 1) ? argv[1] : "../data";
     testInitialState(dataDirectory);
@@ -259,6 +297,7 @@ int main(int argc, char* argv[]) {
     testWaitlist(dataDirectory);
     testDropAndPromotion(dataDirectory);
     testUndo(dataDirectory);
+    testSaving(dataDirectory);
     std::cout << "All registration tests passed.\n";
     return 0;
 }

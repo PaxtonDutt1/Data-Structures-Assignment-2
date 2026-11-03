@@ -45,7 +45,9 @@ public:
     void printCourseRoster(const std::string& courseCode) const;
     void printWaitlist(const std::string& courseCode) const;
 
-    void saveRegistrations(const std::string& filename) const;
+    void printStatistics() const;
+
+    void saveRegistrations(const std::string& filename);
 
 private:
     bool prerequisitesSatisfied(const Student& student, const Course& course) const;

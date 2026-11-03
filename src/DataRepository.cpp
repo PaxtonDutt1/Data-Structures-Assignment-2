@@ -136,6 +136,11 @@ const std::vector<RegistrationRecord>& DataRepository::getInitialRegistrations()
     return initialRegistrations;
 }
 
+std::size_t DataRepository::studentCount() const { return students.size(); }
+std::size_t DataRepository::courseCount() const { return courses.size(); }
+double DataRepository::studentLoadFactor() const { return students.loadFactor(); }
+double DataRepository::courseLoadFactor() const { return courses.loadFactor(); }
+
 void DataRepository::loadStudents(const std::string& filename) {
     readCsv(filename, 6, [this](const std::vector<std::string>& fields) -> std::string {
         int id = 0;

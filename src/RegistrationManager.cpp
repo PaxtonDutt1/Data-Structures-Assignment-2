@@ -1,5 +1,8 @@
 #include "RegistrationManager.h"
 #include <iostream>
+#include <algorithm>
+#include <fstream>
+#include <vector>
 
 RegistrationManager::RegistrationManager(DataRepository& repository)
     : repository(repository) {}
@@ -212,19 +215,129 @@ std::size_t RegistrationManager::activeRegistrationCount() const {
 }
 
 void RegistrationManager::printStudentSchedule(int studentId) const {
-    // TODO
+    const Student* student = repository.getStudent(studentId);
+    if (student == nullptr) {
+        std::cout << "Unknown student ID " << studentId << ".\n";
+        return;
+    }
+
+    std::vector<std::string> courseCodes;
+    registrations.forEach([&courseCodes, studentId](const RegistrationRecord& record) {
+        if (record.studentId == studentId) {
+            courseCodes.push_back(record.courseCode);
+        }
+    });
+    std::sort(courseCodes.begin(), courseCodes.end());
+
+    std::cout << "Schedule for " << student->getName() << " (" << studentId << ", "
+              << student->getLevel() << ", " << student->getMajor() << ", "
+              << (student->isActive() ? "active" : "inactive") << ")\n";
+    if (courseCodes.empty()) {
+        std::cout << "  No current registrations.\n";
+        return;
+    }
+
+    int totalCredits = 0;
+    for (const std::string& code : courseCodes) {
+        const Course* course = repository.getCourse(code);
+        if (course != nullptr) {
+            std::cout << "  " << code << " section " << course->getSection() << ": "
+                      << course->getTitle() << " (" << course->getCredits() << " credits)\n";
+            totalCredits += course->getCredits();
+        }
+    }
+    std::cout << "  Total: " << courseCodes.size() << " course(s), "
+              << totalCredits << " credits\n";
 }
 
 void RegistrationManager::printCourseRoster(const std::string& courseCode) const {
-    // TODO
+    const Course* course = repository.getCourse(courseCode);
+    if (course == nullptr) {
+        std::cout << "Unknown course code " << courseCode << ".\n";
+        return;
+    }
+
+    std::vector<int> studentIds;
+    registrations.forEach([&studentIds, &courseCode](const RegistrationRecord& record) {
+        if (record.courseCode == courseCode) {
+            studentIds.push_back(record.studentId);
+        }
+    });
+    std::sort(studentIds.begin(), studentIds.end());
+
+    std::cout << "Roster for " << courseCode << " section " << course->getSection() << ": "
+              << course->getTitle() << "\n  Enrollment: " << studentIds.size() << "/"
+              << course->getCapacity() << "\n";
+    for (int id : studentIds) {
+        const Student* student = repository.getStudent(id);
+        std::cout << "  " << id << " " << (student != nullptr ? student->getName() : "(unknown)")
+                  << '\n';
+    }
 }
 
 void RegistrationManager::printWaitlist(const std::string& courseCode) const {
-    // TODO
+    const Course* course = repository.getCourse(courseCode);
+    if (course == nullptr) {
+        std::cout << "Unknown course code " << courseCode << ".\n";
+        return;
+    }
+
+    std::cout << "Waitlist for " << courseCode << " (enrollment "
+              << enrollmentCount(courseCode) << "/" << course->getCapacity() << ")\n";
+    const ArrayQueue<WaitlistEntry>* queue = waitlists.find(courseCode);
+    if (queue == nullptr || queue->empty()) {
+        std::cout << "  The waitlist is empty.\n";
+        return;
+    }
+
+    int position = 0;
+    queue->forEach([this, &position](const WaitlistEntry& entry) {
+        const Student* student = repository.getStudent(entry.studentId);
+        std::cout << "  " << ++position << ". " << entry.studentId << " "
+                  << (student != nullptr ? student->getName() : "(unknown)") << '\n';
+    });
 }
 
-void RegistrationManager::saveRegistrations(const std::string& filename) const {
-    // TODO: Write active registrations in CSV format.
+void RegistrationManager::printStatistics() const {
+    std::size_t nonEmptyWaitlists = 0;
+    std::size_t waitlistedStudents = 0;
+    waitlists.forEach([&nonEmptyWaitlists, &waitlistedStudents](
+                          const std::string&, const ArrayQueue<WaitlistEntry>& queue) {
+        if (!queue.empty()) {
+            ++nonEmptyWaitlists;
+            waitlistedStudents += queue.size();
+        }
+    });
+
+    std::cout << "System statistics\n"
+              << "  Students: " << repository.studentCount() << '\n'
+              << "  Courses: " << repository.courseCount() << '\n'
+              << "  Active registrations: " << registrations.size() << '\n'
+              << "  Non-empty waitlists: " << nonEmptyWaitlists << '\n'
+              << "  Waitlisted students: " << waitlistedStudents << '\n'
+              << "  Actions available to undo: " << undoStack.size() << '\n'
+              << "  Student table load factor: " << repository.studentLoadFactor() << '\n'
+              << "  Course table load factor: " << repository.courseLoadFactor() << '\n';
+}
+
+void RegistrationManager::saveRegistrations(const std::string& filename) {
+    std::ofstream file(filename);
+    if (!file) {
+        report("Save failed: could not open " + filename + " for writing.");
+        return;
+    }
+
+    file << "student_id,course_code\n";
+    registrations.forEach([&file](const RegistrationRecord& record) {
+        file << record.studentId << ',' << record.courseCode << '\n';
+    });
+    file.flush();
+
+    if (!file) {
+        report("Save failed: an error occurred while writing " + filename + ".");
+        return;
+    }
+    report("Saved " + std::to_string(registrations.size()) + " registrations to " + filename + ".");
 }
 
 bool RegistrationManager::prerequisitesSatisfied(
