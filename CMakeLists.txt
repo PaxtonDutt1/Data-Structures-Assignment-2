@@ -16,3 +16,12 @@ target_include_directories(a2 PRIVATE src)
 
 add_executable(test_structures tests/test_structures.cpp)
 target_include_directories(test_structures PRIVATE src)
+
+add_executable(test_registration
+    tests/test_registration.cpp
+    src/Student.cpp
+    src/Course.cpp
+    src/DataRepository.cpp
+    src/RegistrationManager.cpp
+)
+target_include_directories(test_registration PRIVATE src)

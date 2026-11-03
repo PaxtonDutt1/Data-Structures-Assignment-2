@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
         repository.loadAll(dataDirectory);
 
         RegistrationManager manager(repository);
-        // manager.initializeFromRepository();
+        manager.initializeFromRepository();
 
         // TODO: implement the complete menu loop.
         printMenu();

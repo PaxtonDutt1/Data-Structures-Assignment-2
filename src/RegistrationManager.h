@@ -34,6 +34,7 @@ public:
 
     bool isRegistered(int studentId, const std::string& courseCode) const;
     int enrollmentCount(const std::string& courseCode) const;
+    std::size_t activeRegistrationCount() const;
 
     void printStudentSchedule(int studentId) const;
     void printCourseRoster(const std::string& courseCode) const;

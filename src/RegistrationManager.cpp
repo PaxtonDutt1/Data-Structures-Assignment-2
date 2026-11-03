@@ -5,7 +5,12 @@ RegistrationManager::RegistrationManager(DataRepository& repository)
     : repository(repository) {}
 
 void RegistrationManager::initializeFromRepository() {
-    // TODO: Populate registrations from repository.getInitialRegistrations().
+    registrations.clear();
+    for (const RegistrationRecord& record : repository.getInitialRegistrations()) {
+        registrations.pushFront(record);
+    }
+    std::cout << "Active registrations initialized: "
+              << registrations.size() << '\n';
 }
 
 bool RegistrationManager::registerStudent(
@@ -42,13 +47,21 @@ void RegistrationManager::processWaitlist(const std::string& courseCode) {
 
 bool RegistrationManager::isRegistered(
     int studentId, const std::string& courseCode) const {
-    // TODO
-    return false;
+    return registrations.contains(RegistrationRecord{studentId, courseCode});
 }
 
 int RegistrationManager::enrollmentCount(const std::string& courseCode) const {
-    // TODO
-    return 0;
+    int count = 0;
+    registrations.forEach([&count, &courseCode](const RegistrationRecord& record) {
+        if (record.courseCode == courseCode) {
+            ++count;
+        }
+    });
+    return count;
+}
+
+std::size_t RegistrationManager::activeRegistrationCount() const {
+    return registrations.size();
 }
 
 void RegistrationManager::printStudentSchedule(int studentId) const {
