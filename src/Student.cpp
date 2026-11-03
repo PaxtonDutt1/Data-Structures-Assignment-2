@@ -12,6 +12,7 @@ const std::string& Student::getLevel() const { return level; }
 const std::string& Student::getMajor() const { return major; }
 int Student::getEarnedCredits() const { return earnedCredits; }
 bool Student::isActive() const { return active; }
+void Student::setActive(bool newStatus) { active = newStatus; }
 
 void Student::addCompletedCourse(const std::string& courseCode) {
     completedCourses.insert(courseCode);

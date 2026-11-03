@@ -23,6 +23,7 @@ public:
     const std::string& getMajor() const;
     int getEarnedCredits() const;
     bool isActive() const;
+    void setActive(bool newStatus);
 
     void addCompletedCourse(const std::string& courseCode);
     bool hasCompleted(const std::string& courseCode) const;

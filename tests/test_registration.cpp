@@ -112,11 +112,66 @@ static void testWaitlist(const std::string& dataDirectory) {
     assert(manager.waitlistSize("PHYS165") == 2);
 }
 
+static void testDropAndPromotion(const std::string& dataDirectory) {
+    TestSystem system(dataDirectory);
+    RegistrationManager& manager = system.manager;
+
+    // Failed drops change nothing.
+    assert(!manager.dropStudent(999999, "PHYS165"));
+    assert(lastMessageHas(manager, "unknown student"));
+    assert(!manager.dropStudent(200921, "NOPE100"));
+    assert(lastMessageHas(manager, "unknown course"));
+    assert(!manager.dropStudent(200001, "PHYS165"));
+    assert(lastMessageHas(manager, "not registered"));
+    assert(manager.activeRegistrationCount() == 2222);
+
+    // Students 200001, 200002, and 200003 wait in that order for PHYS165 (30/30).
+    manager.registerStudent(200001, "PHYS165");
+    manager.registerStudent(200002, "PHYS165");
+    manager.registerStudent(200003, "PHYS165");
+    assert(manager.waitlistSize("PHYS165") == 3);
+
+    // A drop promotes the first student in line, and only that student.
+    assert(manager.dropStudent(200921, "PHYS165"));
+    assert(!manager.isRegistered(200921, "PHYS165"));
+    assert(manager.isRegistered(200001, "PHYS165"));
+    assert(!manager.isRegistered(200002, "PHYS165"));
+    assert(manager.enrollmentCount("PHYS165") == 30);
+    assert(manager.waitlistSize("PHYS165") == 2);
+
+    // A waitlisted student who becomes ineligible is removed and skipped.
+    system.repository.getStudent(200002)->setActive(false);
+    assert(manager.dropStudent(200620, "PHYS165"));
+    assert(!manager.isRegistered(200002, "PHYS165"));
+    assert(!manager.isWaitlisted(200002, "PHYS165"));
+    assert(manager.isRegistered(200003, "PHYS165"));
+    assert(manager.enrollmentCount("PHYS165") == 30);
+    assert(manager.waitlistSize("PHYS165") == 0);
+
+    // With nobody waiting, a drop simply leaves an open seat.
+    assert(manager.dropStudent(201171, "PHYS165"));
+    assert(manager.enrollmentCount("PHYS165") == 29);
+
+    // An over-capacity course still has no seat after one drop.
+    manager.registerStudent(200001, "ENGR360");
+    assert(manager.dropStudent(200026, "ENGR360"));
+    assert(manager.enrollmentCount("ENGR360") == 34);
+    assert(!manager.isRegistered(200001, "ENGR360"));
+    assert(manager.isWaitlisted(200001, "ENGR360"));
+
+    // Processing a waitlist directly handles bad input safely.
+    manager.processWaitlist("NOPE100");
+    assert(lastMessageHas(manager, "unknown course"));
+    manager.processWaitlist("CPSC100");
+    assert(lastMessageHas(manager, "is empty"));
+}
+
 int main(int argc, char* argv[]) {
     const std::string dataDirectory = (argc > 1) ? argv[1] : "../data";
     testInitialState(dataDirectory);
     testRegistrationRules(dataDirectory);
     testWaitlist(dataDirectory);
+    testDropAndPromotion(dataDirectory);
     std::cout << "All registration tests passed.\n";
     return 0;
 }

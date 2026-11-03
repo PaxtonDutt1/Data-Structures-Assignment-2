@@ -65,11 +65,24 @@ bool RegistrationManager::registerStudent(
 
 bool RegistrationManager::dropStudent(
     int studentId, const std::string& courseCode) {
-    // TODO:
-    // Remove registration.
-    // Push undo information.
-    // Then attempt to move the first eligible waitlisted student into the course.
-    return false;
+    if (repository.getStudent(studentId) == nullptr) {
+        report("Drop failed: unknown student ID " + std::to_string(studentId) + ".");
+        return false;
+    }
+    if (repository.getCourse(courseCode) == nullptr) {
+        report("Drop failed: unknown course code " + courseCode + ".");
+        return false;
+    }
+    if (!registrations.remove(RegistrationRecord{studentId, courseCode})) {
+        report("Drop failed: student " + std::to_string(studentId) +
+               " is not registered in " + courseCode + ".");
+        return false;
+    }
+
+    undoStack.push(RegistrationAction{ActionType::Drop, studentId, courseCode});
+    report("Dropped student " + std::to_string(studentId) + " from " + courseCode + ".");
+    processWaitlist(courseCode);
+    return true;
 }
 
 bool RegistrationManager::undoLastAction() {
@@ -80,9 +93,42 @@ bool RegistrationManager::undoLastAction() {
 }
 
 void RegistrationManager::processWaitlist(const std::string& courseCode) {
-    // TODO:
-    // Process entries in FIFO order until the course is full
-    // or no eligible entries remain.
+    const Course* course = repository.getCourse(courseCode);
+    if (course == nullptr) {
+        report("Cannot process waitlist: unknown course code " + courseCode + ".");
+        return;
+    }
+
+    ArrayQueue<WaitlistEntry>* queue = waitlists.find(courseCode);
+    if (queue == nullptr || queue->empty()) {
+        report("The waitlist for " + courseCode + " is empty.");
+        return;
+    }
+
+    int enrolled = enrollmentCount(courseCode);
+    while (!queue->empty() && enrolled < course->getCapacity()) {
+        const WaitlistEntry entry = queue->dequeue();
+        const std::string studentText = "student " + std::to_string(entry.studentId);
+
+        const Student* student = repository.getStudent(entry.studentId);
+        std::string reason;
+        if (student == nullptr) {
+            report("Removed unknown " + studentText + " from the " + courseCode + " waitlist.");
+        } else if (!canRegister(*student, *course, reason)) {
+            report("Removed from the " + courseCode + " waitlist: " + reason);
+        } else {
+            // No undo record: the user's own register or drop is what undo reverses.
+            registrations.pushFront(RegistrationRecord{entry.studentId, courseCode});
+            ++enrolled;
+            report("Promoted " + studentText + " from the waitlist into " + courseCode + ".");
+        }
+    }
+
+    if (!queue->empty()) {
+        report(courseCode + " has no open seat (" + std::to_string(enrolled) + "/" +
+               std::to_string(course->getCapacity()) + "); " +
+               std::to_string(queue->size()) + " student(s) still waiting.");
+    }
 }
 
 bool RegistrationManager::isRegistered(
